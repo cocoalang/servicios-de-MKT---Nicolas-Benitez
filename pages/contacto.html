@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactame</title>
+    <link rel="shortcut icon" href="../flat-satellite.ico" type="image/x-icon"> <!-- crear logo favicon -->
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <!-- Logo a la izquierda -->
+            <a href="../index.html"><img src="../images/dna_icon.png" alt="Logo Cardentas MKT" width="60" class="navigation__logo"></a>
+            <!-- menu flotante a la derecha con todos los botones en la misma línea -->
+            <ul class="navigation__menu">
+                <li><a href="../index.html#usos">¿Usar Redes?</a></li>
+                <li><a href="../index.html#planes">Planes</a></li>
+                <li><a href="../index.html#servicios">Servicios</a>
+                    <ul class="navigation__submenu">
+                        <li>Plan de Social Media</li>
+                        <li>Redacción</li>
+                        <li>Community</li>
+                        <li>Campañas</li>
+                    </ul>
+                </li>
+                <li><a href="../pages/blog.html">Blog</a></li><!-- No se va a poder hacer un Blog en una pagina obviamente. Esquematico. -->
+                <li><a href="../pages/portfolio.html">Portfolio</a></li>
+                <li><a href="../pages/contacto.html">Contactame</a></li>
+                <li><a href="../pages/conoceme.html">Más sobre mi</a></li>
+            </ul>
+            <!-- Menu flotante, en movile desplegable de lineas -->
+        </nav>
+    </header>
+    <main>
+        <h1>Dejame tus datos y consulta</h1>
+        <form>
+            <!-- Nombre de persona -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" placeholder="Ingrese su nombre" value="nombre" name="nombre">
+            <br>
+            <!-- Correo -->
+            <label for="mail">Mail:</label>
+            <input type="email" name="mail" id="" placeholder="Ingrese su correo" value="email">
+            <br>
+            <label for="pais">Pais:</label>
+            <select name="pais" id="">
+                <option value="arg">Argentina</option>
+                <option value="chi">Chile</option>
+                <option value="uru">Uruguay</option>
+                <option value="ecu">Ecuador</option>
+                <option value="otro">Otro</option>
+            </select>
+            <br>
+            <!-- Dejar mensaje -->
+            <textarea name="" id="" cols="30" rows="10" placeholder="Deje un mensaje aqui"></textarea>
+            <br>
+            <!-- CHECKBOX para que seleccione una o más opciones -->
+            <fieldset>
+                <legend>¿Que servicios te interesan?</legend>
+
+                <input type="checkbox" name="" id="" value="redac"> Redacción de contenidos 
+                <input type="checkbox" name="" id="" value="redes"> Manejo de redes
+                <input type="checkbox" name="" id="" value="comun"> Generar Comunidad
+                <input type="checkbox" name="" id="" value="monet"> Monetizar
+            </fieldset>
+            <br>
+            <br>
+            <!-- Boton enviar -->
+            <input type="submit" value="Enviar">
+        </form>    
+    </main>
+    <br>
+    <br>
+    <section>
+        
+        <!-- puede ir posicionado a la derecha -->
+        <h2>Estamos en Palermo</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52563.48321200611!2d-58.456035121583014!3d-34.573357674904784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20CABA!5e0!3m2!1ses!2sar!4v1645995807968!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <hr />
+    <footer>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li><!-- No se va a poder hacer un Blog en una pagina obviamente. Esquematico. -->
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contacto.html">Contactame</a></li>
+            <li><a href="conoceme.html">Más sobre mi</a></li>
+            <li>T: +54 9 11 5555 5555 | M: ciencia@ciencia.com</li>
+            <li>FB|IG|Li</li>
+        </ul>
+    </footer>
+</body>
+</html>

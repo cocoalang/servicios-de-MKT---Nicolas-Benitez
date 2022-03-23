@@ -1,0 +1,486 @@
+/* COLORES
+#B88BAD
+#DBC4DF
+#FFF5FB
+#F4E2D2
+*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html 
+{
+    /* 62.5% of 16px base font size is 10px */
+    font-size: 62.5%;
+}
+
+/* <<<<<< FORMATOS GENERALES >>>>>>> */
+h1
+{
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h2
+{
+    font-size: 6rem;
+    font-weight:400;
+}
+h3
+{
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+a
+{
+    text-decoration: none;
+}
+p
+{
+    font-size: 1.5rem;
+}
+
+a:link 
+{
+    color: orchid;
+}
+
+  /* visited link */
+a:visited 
+{
+    color: rgb(248, 143, 245);
+}
+  /* mouse over link */
+a:hover 
+{
+    color: rgb(211, 52, 131);
+}
+
+  /* selected link */
+a:active 
+{
+    font-weight: bold;
+}
+
+body
+{
+    font-weight: 100;
+}
+/* considero que no es necesario usar GRID en este caso. Esta utilizado como parte de la consigna. */
+/* .bodyIndex 
+{
+    display: grid;
+
+    grid-template-rows: 12vh;
+    grid-template-areas:
+        "navegador"
+        "banner"
+        "archivo"
+        "servicios"
+        "planes"
+        "footer";
+
+
+} */
+
+/* .banner
+{
+    grid-area: banner;
+}
+
+#usos
+{
+    grid-area: archivo;
+}
+
+.servicios
+{
+    grid-area: servicios;
+}
+
+.tabla
+{
+    grid-area: planes;
+    background-image: url(../images/fondo_ciencia.png);
+} */
+
+/* <<<<< FORMATOS DE HEADER >>>>>>> */
+header
+{
+    width: 100vw;
+    margin: 0% 0%;
+    padding: 1vh 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: sticky;
+    top: 0px;
+    grid-area: navegador;
+    display: flex;
+    justify-content: right;
+
+/*     justify-items: center;  */
+}
+
+.navigation
+{
+/*     width: 100%; */
+    top: 1%;
+    font-size: 0;
+    display: flex;
+    align-items: center; 
+/*     justify-content: flex-end; */
+}
+
+.navigation__logo 
+{
+    width: 8vw;
+    margin: 1% 2vw;
+}
+
+.navigation__menu
+{
+    display: flex;
+    list-style: none;
+    width: 80vw;
+    background-color: #B88BAD;
+/*     border-style: solid;
+    border-color: #fff;
+    border-width: 0.2rem; */
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 3vw;
+}
+
+.navigation__menu li
+{
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    padding: 0.2rem 0.6rem;
+    font-size: 2rem;
+}
+
+.navigation__menu li:hover
+{
+/*     font-size: 14px; */
+    background-color: #DBC4DF;
+}
+
+.navigation__submenu
+{
+    display: none;
+    position: absolute;
+    top: 100%
+}
+
+.navigation__menu li a
+{
+    text-decoration: none;
+}
+
+.navigation__menu li:hover ul
+{
+    display: block;
+    background-color: #DBC4DF;
+    padding: 2%;
+}
+
+.navigation__submenu li:hover
+{
+    font-weight: bold;
+}
+
+.navigation__submenu li
+{
+    background-color: #DBC4DF;
+    padding: 3%;
+}
+
+header a:link 
+{
+    color: #fff;
+}
+
+  /* visited link */
+header a:visited 
+{
+    color: #fff;
+}
+  /* mouse over link */
+header a:hover 
+{
+    color: #fff;
+}
+
+  /* selected link */
+header a:active 
+{
+    font-weight: bold;
+}
+
+/* <<<<<AQUI FORMATOS DE PORTADA>>>>>>> */
+.banner
+{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner__info
+{
+    width: 470px;
+    margin: 1vh 3vw 1vh 0;
+    align-items:flex-start;
+} 
+
+.banner__img
+{
+    width: 49vw;
+/*     min-width: 400px; */
+    padding-right: 2vw;
+/*     max-height: 80vh; */
+} 
+
+.banner__info h1
+{
+    display: flex;
+/*     text-decoration-color: #B88BAD; */
+    color: #fff;
+    margin-bottom: 2vh;
+    font-size: 6rem;
+}
+
+.titulo
+{
+    display: flex;
+    flex-flow: column;
+}
+
+.titulo--1
+{
+    width: 35rem;
+    padding-left: 4rem;
+}
+
+.titulo--2
+{
+    width: 40rem;
+    padding-left: 4rem;
+}
+
+.titulo span
+{
+    margin-bottom: 10px;
+    background-color: #B88BAD;
+    display: flex;
+    justify-items: start;
+}
+
+.banner__info h2
+{
+    background-color: none;
+    color: #B88BAD;
+    padding-left: 4rem;
+    font-size: 5rem;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 1023px)
+{
+    .titulo--1
+    {
+        width: 35rem;
+        padding-left: 4rem;
+    }
+
+    .titulo--2
+    {
+        width: 40rem;
+        padding-left: 4rem;
+    }
+}
+
+/* <<<<<<< FORMATOS USOS EN INDEX >>>>>>>>>>>>> */
+#usos
+{
+    display: flex;
+/*     flex-direction: column; */
+    justify-content: center;
+    padding-top: 12vh;
+    align-items: center;
+    justify-items: center;
+}
+
+#usos img{
+    width: 80vw;
+}
+
+
+
+/* img.tabsContent
+{
+    width: 80vw;
+} */
+
+/* <<<<<<< FORMATOS MAIN SERVICIOS EN INDEX >>>>>>>>>>>>> */
+.servicios
+{
+/*     color: #B88BAD;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap; 
+    flex-flow: row wrap;
+    align-content:flex-start; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "servicio1 servicio2"
+    "servicio3 servicio4";
+    row-gap: 4vw;
+    column-gap: 20vh;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-items: center;
+    color: #B88BAD;
+    padding: 12vh 15vw 0 15vw;
+    text-align: center;
+}
+
+
+.servicios article img
+{
+    height: 80%;
+    justify-self: center;
+}
+.servicios article
+{
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    justify-content: center;
+/*     width: 30vw; */
+/*    text-align: center;
+    padding: 1rem; */
+}
+
+.servicios article h3
+{
+    display: inline-block;
+/*     text-align: center; */
+    align-self: center;
+/*     font-weight: 400; */
+    padding: .8rem;
+    height: 7rem;
+    width: 80%;
+}
+
+.servicios article p
+{
+    padding: .5em;
+}
+
+.servicios div
+{
+    height: 35%;
+    margin-bottom: 2%;
+}
+
+
+
+@media screen and (max-width: 660px)
+{
+    .servicios
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "servicio1"
+        "servicio2"
+        "servicio3"
+        "servicio4";
+    }
+    .menu__usos
+    {
+        display: none;
+    }
+}
+
+/* <<<<<<< FORMATOS PLANES  >>>>>>>>>>>>> */
+
+.tabla
+{
+    background-image: url(../images/fondo_ciencia.png);
+    display: flex;
+    justify-content: center;
+}
+
+.planes
+{
+    border-collapse: separate;
+    width: 90vw;
+}
+
+
+.planes__titulo
+{
+    text-align: left;
+    margin: 0.5rem;
+}
+
+.planes th
+{
+    padding: 0.5rem;
+    background-color: #DBC4DF;
+    color: #fff;
+}
+
+.titulo_horizontal
+{
+    background-color: #DBC4DF;
+}
+
+.planes td
+{
+    padding: 0.5rem;
+    background-color: #FFF5FB;
+    color: rgb(66, 66, 66);
+}
+
+
+
+/* <<<<<<< FORMATOS FOOTER  >>>>>>>>>>>>> */
+
+footer
+{
+    background-color: #DBC4DF;
+    color: #FFF5FB;
+}
+
+footer ul
+{
+    padding: 2rem;
+    list-style: none;
+}
+
+footer li
+{
+    padding: 0.2rem;
+    list-style: none;
+}
+
+footer a:link
+{
+    color: #F4E2D2;
+}
+
+footer a:visited 
+{
+    color: #fff;
+}

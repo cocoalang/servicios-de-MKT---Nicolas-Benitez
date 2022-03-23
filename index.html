@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Science</title>
+    <link rel="shortcut icon" href="flat-satellite.ico" type="image/x-icon"> <!-- crear logo favicon -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body class="bodyIndex">
+    <header>
+        <nav class="navigation">
+            <!-- Logo a la izquierda -->
+            <a href="index.html"><img src="images/dna_icon.png" alt="Logo Cardenas MKT" class="navigation__logo" /></a> <!-- dónde conviene poner la "class"???? -->
+            <!-- menu flotante a la derecha con todos los botones en la misma línea -->
+            <ul class="navigation__menu">
+                <li class="menu__usos"><a href="#usos">¿Usar Redes?</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="#servicios">Servicios</a>
+                    <ul class="navigation__submenu">
+                        <li>Plan de Social Media</li>
+                        <li>Redacción</li>
+                        <li>Community</li>
+                        <li>Campañas</li>
+                    </ul>
+                </li>
+                <li><a href="pages/blog.html">Blog</a></li><!-- No se va a poder hacer un Blog en una pagina obviamente. Esquematico. -->
+                <li><a href="pages/portfolio.html">Portfolio</a></li>
+                <li><a href="pages/contacto.html">Contactame</a></li>
+                <li><a href="pages/conoceme.html">Más sobre mi</a></li>
+            </ul>
+            <!-- Menu flotante, en movile desplegable de lineas -->
+        </nav>
+    </header>
+
+    <section class="banner"><!-- Esta es la portada principal con una imagen a la derecha y texto a la izquierda. -->
+        <div class="banner__info">
+            <h1 class="titulo"><span class="titulo--1">Community</span><span class="titulo--2">Management</span></h1>
+            <h2>y Comunicación Científica</h2>
+        </div>
+        <img class="banner__img" src="images/banner_icons.png" alt="imagen comunicación de Ciencia" class="banner__image">
+    </section>
+
+
+
+    <section id="usos"><!-- contenido en X solapas con Beneficios de promocionarse en redes sociales. Cada solapa una imagen o video o contenido dinamico? -->
+        <img src="images/tabs_info.png" alt="Información sobre redes sociales" class="tabsContent">
+<!--         <h4>Solapa 1</h4>
+        <p>contenido que sería visual con algo de texto (no parrafo)</p>
+        <h4>Solapa 2</h4>
+        <p>contenido que sería visual con algo de texto (no parrafo)</p>
+        <h4>Solapa 3</h4>
+        <p>contenido que sería visual con algo de texto (no parrafo)</p>
+        <h4>Solapa 4</h4>
+        <p>contenido que sería visual con algo de texto (no parrafo)</p> -->
+    </section>
+
+    <main class="servicios" id="servicios"><!-- aca la idea es que haya dos columnas en PC y una sola en Mobile con un icono vectorial, titulo y texto de los servicios. -->
+        <article class="srv1">
+            <div>
+                <img src="images/Dredaccion.png" alt="dibujo de lapicera en lineas"><!-- entiendo que el tamaño de los iconos va a ser creado con una class tipo class="iconos" y por CSS -->
+            </div>
+            <h3>Redacción de contenidos</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat consectetur diam, sit amet efficitur ante lobortis id. Duis vehicula id metus ultricies facilisis. Nunc efficitur commodo urna cursus auctor. Donec dictum, eros eget varius ultrices, erat lacus sollicitudin diam, sed pulvinar ante turpis et mauris. dictum, eros eget varius ultrices, erat lacus sollicitudin diam, sed pulvinar ante turpis et mauris. </p>
+        </article>
+        <article class="srv2">
+            <div>
+                <img src="images/Dleads.png" alt="icono contactos">
+            </div>
+            <h3>Leads para tu negocio</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat consectetur diam, sit amet efficitur ante lobortis id. Duis vehicula id metus ultricies facilisis. Nunc efficitur commodo urna cursus auctor. Donec dictum, eros eget varius ultrices, erat lacus sollicitudin diam, sed pulvinar ante turpis et mauris. </p>
+        </article>
+        <article class="srv3">
+            <div>
+                <img src="images/Dcomunidad.png" alt="icono me gusta facebook">                
+            </div>
+            <h3>Generá comunidad</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat consectetur diam, sit amet efficitur ante lobortis id. Duis vehicula id metus ultricies facilisis. Nunc efficitur commodo urna cursus auctor. Donec dictum, eros eget varius ultrices, erat lacus sollicitudin diam, sed pulvinar ante turpis et mauris. </p>
+        </article>
+        <article class="srv4">
+            <div>
+                <img src="images/Dmonetiza.png" alt="icono dolar"><!-- los iconos estan creados "así nomas" quedaron desproporcionados. -->
+            </div>
+            
+            <h3>Monetizá tu emprendimiento</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat consectetur diam, sit amet efficitur ante lobortis id. Duis vehicula id metus ultricies facilisis. Nunc efficitur commodo urna cursus auctor. Donec dictum, eros eget varius ultrices, erat lacus sollicitudin diam, sed pulvinar ante turpis et mauris. </p>
+        </article>
+    </main>
+
+<!--     <aside>
+        <p>me dejaron de costado</p>
+        <ul>
+            <li>opcion 1</li>
+            <li>opcion 2</li>
+            <li>opcion 3</li>
+            <li>opcion 4</li>
+            <li>opcion 5</li>
+        </ul>
+    </aside> -->
+    <section class="tabla">
+        <article>
+            <table class="planes" id="planes">
+                <caption>
+                    <h2 class="planes__titulo">Planes de contratación</h2>
+                </caption>
+                <th><!-- vacio --></th>
+                <th>Instagram</th>
+                <th>Facebook</th>
+                <th>TikTok</th>
+                <th>LinkedIn</th>
+            
+                <tr>
+                    <td  class="titulo_horizontal"><h4>Básico</h4></td>
+                    <td>Imagen + Contenido</td>
+                    <td>Reposteo</td>
+                    <td>NO</td>
+                    <td>NO</td>
+                </tr>
+            
+                <tr>
+                    <td  class="titulo_horizontal"><h4>Intermedio</h4></td>
+                    <td>Imagen + Contenido</td>
+                    <td>Reposteo</td>
+                    <td>NO</td>
+                    <td>Imagen + Contenido específico</td>
+                </tr>
+
+                <tr>
+                    <td class="titulo_horizontal"><h4>Full</h4></td>
+                    <td>Imagen + Contenido</td>
+                    <td>Imagen + Contenido específico</td>
+                    <td>Imagen + Contenido específico</td>
+                    <td>Imagen + Contenido específico</td>
+                </tr>
+            </table>
+        </article>
+    </section>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="pages/blog.html">Blog</a></li><!-- No se va a poder hacer un Blog en una pagina obviamente. Esquematico. -->
+                <li><a href="pages/portfolio.html">Portfolio</a></li>
+                <li><a href="pages/contacto.html">Contactame</a></li>
+                <li><a href="pages/conoceme.html">Más sobre mi</a></li>
+                <li>T: +54 9 11 5555 5555 | M: ciencia@ciencia.com</li>
+                <li>FB|IG|Li</li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
+
+<!-- TEXTO RELLENO         
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat consectetur diam, sit amet efficitur ante lobortis id. Duis vehicula id metus ultricies facilisis. Nunc efficitur commodo urna cursus auctor. Donec dictum, eros eget varius ultrices, erat lacus sollicitudin diam, sed pulvinar ante turpis et mauris. Mauris quis ligula gravida, pharetra risus a, tempus neque. Vivamus eget vulputate tortor, ut tristique nulla. Nullam elementum ipsum sit amet mi malesuada aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vulputate interdum lorem, eu dictum neque rhoncus ut. Vivamus lobortis convallis scelerisque. Fusce malesuada faucibus orci, a bibendum dui facilisis in. -->
