@@ -11,13 +11,11 @@
 <body>
     <header>
         <nav class="navigation">
-            <!-- Logo a la izquierda -->
             <a href="../index.html"><img src="../images/dna_icon.png" alt="Logo Cardentas MKT" width="60" class="navigation__logo"></a>
-            <!-- menu flotante a la derecha con todos los botones en la misma línea -->
             <ul class="navigation__menu">
-                <li><a href="../index.html#usos">¿Usar Redes?</a></li>
-                <li><a href="../index.html#planes">Planes</a></li>
-                <li><a href="../index.html#servicios">Servicios</a>
+                <li class="menu__usos"><a href="../index.html#usos">¿Usar Redes?</a></li>
+                <li class="menu_planes"><a href="../index.html#planes">Planes</a></li>
+                <li><a href="">Servicios</a>
                     <ul class="navigation__submenu">
                         <li>Plan de Social Media</li>
                         <li>Redacción</li>
@@ -33,10 +31,88 @@
             <!-- Menu flotante, en movile desplegable de lineas -->
         </nav>
     </header>
-    <main>
-        <h1>Te cuento un poquito sobre mi</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/bEgRvq_aQ8E?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <section class="banner"><!-- Esta es la portada principal con una imagen a la derecha y texto a la izquierda. -->
+        <div class="banner__info">
+            <h1 class="titulo"><span class="titulo--1">Community</span><span class="titulo--2">Management</span></h1>
+            <h2>y Comunicación Científica</h2>
+        </div>
+        <img class="banner__img" src="../images/banner_icons.png" alt="imagen comunicación de Ciencia" class="banner__image">
+    </section>
+
+    <main class="infoPersonal">
+        <h3 class="titleExperiencia">Experiencia Laboral</h3>
+        <div class="experienciaLaboral">
+            <div class="experienciaLaboral__item">
+                <h4>Cofundadora y CEO</h4>
+                <h5>Ubiqus Ciencia</h5>
+                <p>Liderazgo del equipo, manejo de RRSS (CM, creadora de contenidos)</p>
+            </div>
+            <div class="experienciaLaboral__item">
+                <h4>Redactora de entradas de blog</h4>
+                <h5>ID-Core Biotechnology</h5>
+                <p>Redactora de resúmenes de noticias científicas y de charlas científicas.</p>
+            </div>
+            <div class="experienciaLaboral__item">
+                <h4>Miembro del consejo editorial</h4>
+                <h5>Revista Catálisis</h5>
+                <p>Búsqueda de redactores, revisión de artículos, armado de ediciones semestrales.</p>
+            </div>
+            <div class="experienciaLaboral__item">
+                <h4>Divulgadora Científica</h4>
+                <h5>Red Divulga Ciencia</h5>
+                <p>Creación de campañas de divulgación científica</p>
+            </div>
+            <div class="experienciaLaboral__item">
+                <h4>Cofundadora</h4>
+                <h5>Serendis Cosmética Natural</h5>
+                <p>Manejo de redes sociales (CM, creadora de contenido, creación de campañas publicitarias)</p>
+            </div>
+            <div class="experienciaLaboral__item">
+                <h4>Fundadora</h4>
+                <h5>Abriendo el Abanico</h5>
+                <p>Manejo de redes sociales (CM, creadora de contenido, creación de campañas publicitarias, creación de podcast)</p>
+            </div>
+        </div>
+        <h3 class="titleEducacion">Educación</h3>
+        <div class="educacion">
+            <div class="educacion__item">
+                <h4>Biotecnología</h4>
+                <h5>UDLA-Ecuador</h5>
+            </div>
+            <div class="educacion__item">
+                <h4>MSc Biología Molecular Médica</h4>
+                <h5>UBA -Argentina</h5>
+            </div>
+            <div class="educacion__item">
+                <h4>Diplomatura en Periodismo Digital</h4>
+                <h5>UTN FRR -Argentina</h5>
+            </div>
+            <div class="educacion__item">
+                <h4>Community Manager y Publicidad</h4>
+                <h5>CoderHouse -Argentina</h5>
+            </div>
+        </div>
+        <h3 class="titleConocimientos">Conocimientos</h3>
+        <div class="plataformasIconos">
+            <img src="">
+            <img src="">
+            <img src="">
+            <img src="">
+            <img src="">
+            <img src="">
+            <img src="">
+            <img src="">
+            <img src="">
+        </div>
+
+
+
     </main>
+<!--     <section class="seccionVideo">
+        <h3>Te cuento un poquito sobre mi</h3>
+        <iframe src="https://www.youtube.com/embed/bEgRvq_aQ8E?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section> -->
 
     <hr />
     <footer>
@@ -46,11 +122,19 @@
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contacto.html">Contactame</a></li>
             <li><a href="conoceme.html">Más sobre mi</a></li>
-            <li>T: +54 9 11 5555 5555 | M: ciencia@ciencia.com</li>
+            <li>T: +54 9 11 5555 5555</li> 
+            <li>M: ciencia@ciencia.com</li>
             <li>FB|IG|Li</li>
         </ul>
-
-    </footer>
+    </nav>
+    <div class="rrss__icons">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+    </div>
+</footer>
     
 </body>
 </html>

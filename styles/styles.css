@@ -103,12 +103,6 @@ body
     grid-area: servicios;
 }
 
-.tabla
-{
-    grid-area: planes;
-    background-image: url(../images/fondo_ciencia.png);
-} */
-
 /* <<<<< FORMATOS DE HEADER >>>>>>> */
 header
 {
@@ -121,18 +115,14 @@ header
     grid-area: navegador;
     display: flex;
     justify-content: right;
-
-/*     justify-items: center;  */
 }
 
 .navigation
 {
-/*     width: 100%; */
     top: 1%;
     font-size: 0;
     display: flex;
     align-items: center; 
-/*     justify-content: flex-end; */
 }
 
 .navigation__logo 
@@ -147,18 +137,14 @@ header
     list-style: none;
     width: 80vw;
     background-color: #B88BAD;
-/*     border-style: solid;
-    border-color: #fff;
-    border-width: 0.2rem; */
     flex-direction: row;
     justify-content: flex-end;
-    padding-right: 3vw;
+    padding-right: 4vw;
+    flex-wrap: wrap;
 }
 
 .navigation__menu li
 {
-    display: inline-block;
-    position: relative;
     list-style: none;
     padding: 0.2rem 0.6rem;
     font-size: 2rem;
@@ -188,6 +174,7 @@ header
     background-color: #DBC4DF;
     padding: 2%;
 }
+
 
 .navigation__submenu li:hover
 {
@@ -230,29 +217,25 @@ header a:active
     flex-flow: wrap;
     justify-content: space-between;
     align-items: center;
+    margin: 4vw 0;
 }
 
 .banner__info
 {
     width: 470px;
-    margin: 1vh 3vw 1vh 0;
     align-items:flex-start;
 } 
 
 .banner__img
 {
     width: 49vw;
-/*     min-width: 400px; */
     padding-right: 2vw;
-/*     max-height: 80vh; */
 } 
 
 .banner__info h1
 {
     display: flex;
-/*     text-decoration-color: #B88BAD; */
     color: #fff;
-    margin-bottom: 2vh;
     font-size: 6rem;
 }
 
@@ -265,18 +248,18 @@ header a:active
 .titulo--1
 {
     width: 35rem;
-    padding-left: 4rem;
+    padding-left: 4vw;
 }
 
 .titulo--2
 {
     width: 40rem;
-    padding-left: 4rem;
+    padding-left: 4vw;
 }
 
 .titulo span
 {
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
     background-color: #B88BAD;
     display: flex;
     justify-items: start;
@@ -284,25 +267,261 @@ header a:active
 
 .banner__info h2
 {
-    background-color: none;
     color: #B88BAD;
-    padding-left: 4rem;
+    padding-left: 4vw;
     font-size: 5rem;
     font-weight: lighter;
 }
 
-@media screen and (max-width: 1023px)
+@media screen and (max-width: 1200px)
 {
+    .banner__info
+    {
+        width: 350px;
+    } 
+    .banner__info h1
+    {
+        font-size: 4.5rem;
+        margin-bottom: 1vh;
+    }
+    .banner__info h2
+    {
+        font-size: 3.2rem;
+    }
     .titulo--1
     {
-        width: 35rem;
-        padding-left: 4rem;
+        width: 27rem;
     }
-
     .titulo--2
     {
-        width: 40rem;
-        padding-left: 4rem;
+        width: 31rem;
+    }
+    .titulo span
+    {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    .navigation__menu li
+    {
+        padding: 0.2rem 0.6rem;
+        font-size: 1.6rem;
+    }
+    .planes__titulo
+    {
+        font-size: 3rem;
+        padding-left: 3vw;
+    }
+    #planes td
+    {
+        font-size: 2rem;
+    }
+    td.titulo__horizontal
+    {
+        width: 20%;
+    }
+    .servicios
+    {
+        column-gap: 8vw;
+    }
+
+}
+
+/* ||||||||||||| MEDIDAS DE TABLET |||||||||||||| */
+@media screen and (max-width: 768px)
+{
+    .navigation__logo 
+    {
+        width: 62px;
+        margin: 1% 2vw;
+    }
+    .navigation__menu
+    {
+        width: 70vw;
+    }
+    .banner__info
+    {
+        width: 270px;
+    } 
+    .banner__info h1
+    {
+        font-size: 3.5rem;
+        margin-bottom: 0.5vh;
+    }
+    .banner__info h2
+    {
+        font-size: 3.2rem;
+    }
+    .titulo--1
+    {
+        width: 21rem;
+    }
+    .titulo--2
+    {
+        width: 24rem;
+    }
+    .titulo span
+    {
+        margin-bottom: 1rem;
+    }
+    .menu__usos
+    {
+        display: none;
+    }
+    .menu_planes
+    {
+        display: none;
+    }
+}
+
+/* @media screen and (max-width: 600px)
+{
+    .navigation__menu li
+    {
+        padding: 0.2rem 0.6rem;
+        font-size: 1.6rem;
+    }
+    .planes__titulo
+    {
+        font-size: 2rem;
+        padding-left: 3vw;
+    }
+    #planes td
+    {
+        font-size: 1rem;
+    }
+    td.titulo__horizontal
+    {
+        width: 20%;
+    }
+    #planes h4
+    {
+        font-size: 1.3rem;
+    }
+} */
+@media screen and (max-width: 600px)
+{
+    .navigation__menu li
+    {
+        padding: 0.2rem 0.6rem;
+        font-size: 1.6rem;
+    }
+    .banner
+    {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 4vw 0;
+    }
+
+    .banner__info
+    {
+        width: 100vw;
+        align-items:flex-start;
+        margin: 8vw 0;
+    } 
+
+    .banner__img
+    {
+        width: 80vw;
+        padding-right: 2vw;
+    }
+    .banner__info h1
+    {
+        font-size: 4.5rem;
+        margin-bottom: 1vh;
+    }
+    .banner__info h2
+    {
+        font-size: 3.2rem;
+    }
+    .titulo--1
+    {
+        width: 27rem;
+    }
+    .titulo--2
+    {
+        width: 31rem;
+    }
+    .titulo span
+    {
+        margin-bottom: 1.5rem;
+    }
+
+    .planes__titulo
+    {
+        font-size: 2rem;
+        padding-left: 3vw;
+    }
+    #planes td
+    {
+        font-size: 1rem;
+    }
+    /* ERROR no puedo resolver este tema, me pisa la alineacion a la derecha. ID me arruina la vida. */
+    #planes td h4
+    {
+        width: 20%;
+        font-size: 1.5rem;
+        text-align: right;
+    }
+    #planes th h4
+    {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 360px)
+{
+    .navigation__menu li
+    {
+        padding: 0.2rem 0.6rem;
+        font-size: 1.6rem;
+    }
+    .banner__info
+    {
+        width: 100vw;
+    } 
+    .banner__info h1
+    {
+        font-size: 2.8rem;
+        margin-bottom: 0.5vh;
+    }
+    .banner__info h2
+    {
+        font-size: 3.2rem;
+    }
+    .titulo--1
+    {
+        width: 17rem;
+    }
+    .titulo--2
+    {
+        width: 20rem;
+    }
+    .titulo span
+    {
+        margin-bottom: 1rem;
+    }
+    .planes__titulo
+    {
+        font-size: 1rem;
+        padding-left: 3vw;
+    }
+    #planes td
+    {
+        font-size: 0.7rem;
+    }
+    /* ERROR no puedo resolver este tema, me pisa la alineacion a la derecha. ID me arruina la vida. */
+    #planes td h4
+    {
+        width: 20%;
+        font-size: 1rem;
+        text-align: right;
+    }
+    #planes th h4
+    {
+        font-size: 1rem;
     }
 }
 
@@ -310,23 +529,18 @@ header a:active
 #usos
 {
     display: flex;
-/*     flex-direction: column; */
     justify-content: center;
     padding-top: 12vh;
-    align-items: center;
+/*     align-items: center; */
     justify-items: center;
 }
 
-#usos img{
+#usos img
+{
     width: 80vw;
 }
 
 
-
-/* img.tabsContent
-{
-    width: 80vw;
-} */
 
 /* <<<<<<< FORMATOS MAIN SERVICIOS EN INDEX >>>>>>>>>>>>> */
 .servicios
@@ -406,10 +620,7 @@ header a:active
         "servicio3"
         "servicio4";
     }
-    .menu__usos
-    {
-        display: none;
-    }
+
 }
 
 /* <<<<<<< FORMATOS PLANES  >>>>>>>>>>>>> */
@@ -419,40 +630,56 @@ header a:active
     background-image: url(../images/fondo_ciencia.png);
     display: flex;
     justify-content: center;
+    padding-top: 3vw;
 }
 
-.planes
+#planes
 {
-    border-collapse: separate;
-    width: 90vw;
+/*     border-collapse: separate; */
+    border-spacing: 8px;
+    font-size: 3rem;
 }
-
+table#planes
+{
+    width: 900px;
+}
 
 .planes__titulo
 {
     text-align: left;
-    margin: 0.5rem;
+    color: #B88BAD;
+    padding-left: 3vw;
 }
 
-.planes th
+#planes h4
 {
-    padding: 0.5rem;
-    background-color: #DBC4DF;
+    font-size: 2.3rem;
+    font-weight:bolder;
+    background-color: #fff;    
+}
+
+#planes th
+{
+    padding: 1%;
+    color: #B88BAD;
+}
+
+#planes td
+{
+    padding: 1%;
+    background-color: #B88BAD;
     color: #fff;
+    text-align: center;
+    width: 20%;
 }
 
-.titulo_horizontal
+#planes td.titulo__horizontal
 {
-    background-color: #DBC4DF;
+    background-color: transparent;
+    text-align: right;
+    color: #B88BAD;
+/*     width: 180px; */
 }
-
-.planes td
-{
-    padding: 0.5rem;
-    background-color: #FFF5FB;
-    color: rgb(66, 66, 66);
-}
-
 
 
 /* <<<<<<< FORMATOS FOOTER  >>>>>>>>>>>>> */
@@ -461,12 +688,19 @@ footer
 {
     background-color: #DBC4DF;
     color: #FFF5FB;
+    display: flex;
+    padding: 2vw 4vw;
+    gap: 2vw;
+    margin-top: 3%;
 }
 
 footer ul
 {
-    padding: 2rem;
+
     list-style: none;
+    font-size: 2rem;
+    width: 40vw;
+    min-width: 230px;
 }
 
 footer li
@@ -483,4 +717,425 @@ footer a:link
 footer a:visited 
 {
     color: #fff;
+}
+
+footer .rrss__icons
+{
+    min-width: 40;
+    
+}
+
+footer .rrss__icons img
+{
+    width: 50px;
+    height: 50px;
+    background-color: #F4E2D2;
+}
+
+/* <<<<<<<<<<<<<< PÁGINA CONOCEME >>>>>>>>>>>>>>> */
+
+.infoPersonal
+{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: repeat(1fr 4);
+    grid-template-areas: 
+        "titleExperiencia titleEducacion"
+        "experiencia educacion"
+        "experiencia titleConocimientos"
+        "experiencia redes";
+    justify-content: center;
+    padding: 2vh 4vw;
+    gap: 1vw;
+}
+.experienciaLaboral
+{
+    grid-area: experiencia;
+    background-color: #B88BAD;
+    padding: 1vw;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    height: 400px;
+    color: #fff;
+}
+
+.experienciaLaboral__item
+{
+    padding: 5px;
+    width: 45%;
+    border-bottom:dashed 3px #DBC4DF;
+}
+.infoPersonal h3
+{
+    color: #B88BAD;
+    font-size: 3.5rem;
+    padding-left: 1vw;
+    font-weight: bolder;
+}
+.infoPersonal h4
+{
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.3rem;
+}
+.infoPersonal h5
+{
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+    font-weight: lighter;
+}
+
+.infoPersonal p
+{
+    font-size: 1.7rem;
+    font-weight: lighter;
+}
+
+.titleExperiencia
+{
+    grid-area: titleExperiencia;
+    align-items: baseline;
+}
+.titleEducacion
+{
+    grid-area: titleEducacion;
+}
+.titleConocimientos
+{
+    grid-area: titleConocimientos;
+    align-items: baseline;
+}
+
+.plataformasIconos
+{
+    grid-area: redes;
+    background-color: #B88BAD;
+    padding: 1vw;
+}
+.plataformasIconos img
+{
+    width: 50px;
+    height: 50px;
+    background-color: #F4E2D2;
+}
+
+.educacion
+{
+    grid-area: educacion;
+    background-color: #B88BAD;
+    padding: 1vw;
+    color: #fff;
+}
+
+.educacion__item
+{
+    border-bottom:dashed 3px #DBC4DF;
+}
+
+.educacion h4
+{
+    padding-bottom: 0.3rem;
+}
+
+/* .seccionVideo
+{
+    margin-top: 5%;
+}
+.seccionVideo h3
+{
+    color: #B88BAD;
+    padding-bottom: 1rem;
+}
+
+.seccionVideo iframe
+{
+    width: ;
+} */
+
+@media screen and (max-width: 1440px)
+{
+    .infoPersonal h3
+    {
+        color: #B88BAD;
+        font-size: 3.5rem;
+        padding-left: 1vw;
+        font-weight: bolder;
+    }
+.infoPersonal h4
+{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.3rem;
+}
+.infoPersonal h5
+{
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    font-weight: lighter;
+}
+
+.infoPersonal p
+{
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+@media screen and (max-width: 768px)
+{
+    .infoPersonal
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "titleExperiencia"
+            "experiencia"
+            "titleEducacion"
+            "educacion"
+            "titleConocimientos"
+            "redes";
+        justify-content: center;
+        padding: 2vh 4vw;
+        gap: 1vw;
+    }
+    .experienciaLaboral
+    {
+        height: 300;
+    }
+}
+@media screen and (max-width: 660px)
+{
+    .infoPersonal
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "titleExperiencia"
+            "experiencia"
+            "titleEducacion"
+            "educacion"
+            "titleConocimientos"
+            "redes";
+        justify-content: center;
+        padding: 2vh 4vw;
+        gap: 1vw;
+    }
+    .experienciaLaboral
+    {
+        height: auto;
+    }
+    .experienciaLaboral__item
+    {
+        padding: 5px;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 450px)
+{
+    .infoPersonal
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "titleExperiencia"
+            "experiencia"
+            "titleEducacion"
+            "educacion"
+            "titleConocimientos"
+            "redes";
+        justify-content: center;
+        padding: 2vh 4vw;
+        gap: 1vw;
+    }
+    .experienciaLaboral
+    {
+        height: auto;
+    }
+    .experienciaLaboral__item
+    {
+        padding: 5px;
+        width: 90%;
+    }
+}
+
+
+/* ||||||||||||||| PAGINA CONTACTO ||||||||||||||||| */
+
+.contact
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4vw 4vw;
+    gap: 1vw;
+/*     background-color: #B88BAD; */
+}
+
+.contactForm
+{
+    background-color: #fff;
+    width: 350px;
+    display: grid;
+    grid-template-areas:
+        "tagName inputName"
+        "tagMail inputMail"
+        "tagCountry inputCountry"
+        "tagMessage inputMessage"
+        "tagServices inputServices"
+        "NONE buttonSend"
+    ;
+/*     padding: 1vw 0; */
+    text-align: right;
+    gap: 1vw;
+}
+
+.contactAdress
+{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    color: #B88BAD;
+    background-color: #DBC4DF;
+    width: 200px;
+}
+.contactAdress h4
+{
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+.contactAdress ul
+{
+    margin-bottom: 1%;
+}
+.contactAdress span
+{
+    padding-bottom: 0.2rem;
+    color: #fff;
+}
+.contactAdress iframe
+{
+    width: 98%;
+    height: calc(98% / 4 * 3);
+}
+
+.contactAdress .rrss__icons
+{
+    margin-bottom: 1vw;
+    border-color: #fff;
+}
+.contactAdress .rrss__icons img
+{
+    width: 35px;
+    height: 35px;
+    border-color: #F4E2D2;
+}
+.contactForm input
+{
+    background-color: #DBC4DF;
+    border: none;
+    color: #fff;
+    padding: 0.3vw;
+}
+.contactForm label
+{
+    font-size: 1.9vw;
+    color: #B88BAD;
+}
+.contactForm select
+{
+    background-color: #DBC4DF;
+    border: none;
+    color: #fff;
+    padding: 0.3vw;
+}
+.contactForm textarea
+{
+    background-color: #DBC4DF;
+    border: none;
+    color: #fff;
+    padding: 0.3vw;
+}
+.contactForm fieldset
+{
+    border: none;
+    color: #B88BAD;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1vw;
+}
+.contactForm fieldset span
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vw;
+}
+input.buttonSend
+{
+    grid-area: buttonSend;
+    background-color: #B88BAD;
+}
+
+/* |||||||||||||| PAGINA PROYECTOS |||||||||||||||| */
+.projects
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+/*     gap: 2vw; */
+/*     justify-content: space-around; */
+    margin: 2vw;
+/*     justify-content: center; */
+    justify-content: space-evenly;
+    
+    gap: 3vw;
+}
+
+.itemProject
+{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    color: #B88BAD;
+    background-color: #DBC4DF;
+    width: 200px;
+    gap: 2vw;
+}
+.projects h4
+{
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+.projects ul
+{
+    margin-bottom: 1%;
+}
+.projects span
+{
+    padding-bottom: 0.2rem;
+    color: #fff;
+}
+.projects iframe
+{
+    width: 98%;
+    height: calc(98% / 4 * 3);
+}
+
+.projects .rrss__icons
+{
+    margin-bottom: 1vw;
+    border-color: #fff;
+}
+.projects img
+{
+    width: 200px;
+    height: 100px;
+    background-color: #F4E2D2;
+}
+.projects .rrss__icons img
+{
+    width: 35px;
+    height: 35px;
+    border-color: #F4E2D2;
 }
