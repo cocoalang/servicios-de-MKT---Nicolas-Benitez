@@ -273,257 +273,7 @@ header a:active
     font-weight: lighter;
 }
 
-@media screen and (max-width: 1200px)
-{
-    .banner__info
-    {
-        width: 350px;
-    } 
-    .banner__info h1
-    {
-        font-size: 4.5rem;
-        margin-bottom: 1vh;
-    }
-    .banner__info h2
-    {
-        font-size: 3.2rem;
-    }
-    .titulo--1
-    {
-        width: 27rem;
-    }
-    .titulo--2
-    {
-        width: 31rem;
-    }
-    .titulo span
-    {
-        margin-bottom: 1.5rem;
-    }
-}
 
-@media screen and (max-width: 900px)
-{
-    .navigation__menu li
-    {
-        padding: 0.2rem 0.6rem;
-        font-size: 1.6rem;
-    }
-    .planes__titulo
-    {
-        font-size: 3rem;
-        padding-left: 3vw;
-    }
-    #planes td
-    {
-        font-size: 2rem;
-    }
-    td.titulo__horizontal
-    {
-        width: 20%;
-    }
-    .servicios
-    {
-        column-gap: 8vw;
-    }
-
-}
-
-/* ||||||||||||| MEDIDAS DE TABLET |||||||||||||| */
-@media screen and (max-width: 768px)
-{
-    .navigation__logo 
-    {
-        width: 62px;
-        margin: 1% 2vw;
-    }
-    .navigation__menu
-    {
-        width: 70vw;
-    }
-    .banner__info
-    {
-        width: 270px;
-    } 
-    .banner__info h1
-    {
-        font-size: 3.5rem;
-        margin-bottom: 0.5vh;
-    }
-    .banner__info h2
-    {
-        font-size: 3.2rem;
-    }
-    .titulo--1
-    {
-        width: 21rem;
-    }
-    .titulo--2
-    {
-        width: 24rem;
-    }
-    .titulo span
-    {
-        margin-bottom: 1rem;
-    }
-    .menu__usos
-    {
-        display: none;
-    }
-    .menu_planes
-    {
-        display: none;
-    }
-}
-
-/* @media screen and (max-width: 600px)
-{
-    .navigation__menu li
-    {
-        padding: 0.2rem 0.6rem;
-        font-size: 1.6rem;
-    }
-    .planes__titulo
-    {
-        font-size: 2rem;
-        padding-left: 3vw;
-    }
-    #planes td
-    {
-        font-size: 1rem;
-    }
-    td.titulo__horizontal
-    {
-        width: 20%;
-    }
-    #planes h4
-    {
-        font-size: 1.3rem;
-    }
-} */
-@media screen and (max-width: 600px)
-{
-    .navigation__menu li
-    {
-        padding: 0.2rem 0.6rem;
-        font-size: 1.6rem;
-    }
-    .banner
-    {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin: 4vw 0;
-    }
-
-    .banner__info
-    {
-        width: 100vw;
-        align-items:flex-start;
-        margin: 8vw 0;
-    } 
-
-    .banner__img
-    {
-        width: 80vw;
-        padding-right: 2vw;
-    }
-    .banner__info h1
-    {
-        font-size: 4.5rem;
-        margin-bottom: 1vh;
-    }
-    .banner__info h2
-    {
-        font-size: 3.2rem;
-    }
-    .titulo--1
-    {
-        width: 27rem;
-    }
-    .titulo--2
-    {
-        width: 31rem;
-    }
-    .titulo span
-    {
-        margin-bottom: 1.5rem;
-    }
-
-    .planes__titulo
-    {
-        font-size: 2rem;
-        padding-left: 3vw;
-    }
-    #planes td
-    {
-        font-size: 1rem;
-    }
-    /* ERROR no puedo resolver este tema, me pisa la alineacion a la derecha. ID me arruina la vida. */
-    #planes td h4
-    {
-        width: 20%;
-        font-size: 1.5rem;
-        text-align: right;
-    }
-    #planes th h4
-    {
-        font-size: 1.5rem;
-    }
-}
-@media screen and (max-width: 360px)
-{
-    .navigation__menu li
-    {
-        padding: 0.2rem 0.6rem;
-        font-size: 1.6rem;
-    }
-    .banner__info
-    {
-        width: 100vw;
-    } 
-    .banner__info h1
-    {
-        font-size: 2.8rem;
-        margin-bottom: 0.5vh;
-    }
-    .banner__info h2
-    {
-        font-size: 3.2rem;
-    }
-    .titulo--1
-    {
-        width: 17rem;
-    }
-    .titulo--2
-    {
-        width: 20rem;
-    }
-    .titulo span
-    {
-        margin-bottom: 1rem;
-    }
-    .planes__titulo
-    {
-        font-size: 1rem;
-        padding-left: 3vw;
-    }
-    #planes td
-    {
-        font-size: 0.7rem;
-    }
-    /* ERROR no puedo resolver este tema, me pisa la alineacion a la derecha. ID me arruina la vida. */
-    #planes td h4
-    {
-        width: 20%;
-        font-size: 1rem;
-        text-align: right;
-    }
-    #planes th h4
-    {
-        font-size: 1rem;
-    }
-}
 
 /* <<<<<<< FORMATOS USOS EN INDEX >>>>>>>>>>>>> */
 #usos
@@ -608,20 +358,6 @@ header a:active
 
 
 
-@media screen and (max-width: 660px)
-{
-    .servicios
-    {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "servicio1"
-        "servicio2"
-        "servicio3"
-        "servicio4";
-    }
-
-}
 
 /* <<<<<<< FORMATOS PLANES  >>>>>>>>>>>>> */
 
@@ -853,106 +589,7 @@ footer .rrss__icons img
     width: ;
 } */
 
-@media screen and (max-width: 1440px)
-{
-    .infoPersonal h3
-    {
-        color: #B88BAD;
-        font-size: 3.5rem;
-        padding-left: 1vw;
-        font-weight: bolder;
-    }
-.infoPersonal h4
-{
-    font-size: 1.5rem;
-    letter-spacing: 0.1rem;
-    margin-bottom: 0.3rem;
-}
-.infoPersonal h5
-{
-    font-size: 1.3rem;
-    margin-bottom: 0.8rem;
-    font-weight: lighter;
-}
 
-.infoPersonal p
-{
-    font-size: 1.2rem;
-    font-weight: lighter;
-}
-@media screen and (max-width: 768px)
-{
-    .infoPersonal
-    {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "titleExperiencia"
-            "experiencia"
-            "titleEducacion"
-            "educacion"
-            "titleConocimientos"
-            "redes";
-        justify-content: center;
-        padding: 2vh 4vw;
-        gap: 1vw;
-    }
-    .experienciaLaboral
-    {
-        height: 300;
-    }
-}
-@media screen and (max-width: 660px)
-{
-    .infoPersonal
-    {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "titleExperiencia"
-            "experiencia"
-            "titleEducacion"
-            "educacion"
-            "titleConocimientos"
-            "redes";
-        justify-content: center;
-        padding: 2vh 4vw;
-        gap: 1vw;
-    }
-    .experienciaLaboral
-    {
-        height: auto;
-    }
-    .experienciaLaboral__item
-    {
-        padding: 5px;
-        width: 90%;
-    }
-}
-@media screen and (max-width: 450px)
-{
-    .infoPersonal
-    {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "titleExperiencia"
-            "experiencia"
-            "titleEducacion"
-            "educacion"
-            "titleConocimientos"
-            "redes";
-        justify-content: center;
-        padding: 2vh 4vw;
-        gap: 1vw;
-    }
-    .experienciaLaboral
-    {
-        height: auto;
-    }
-    .experienciaLaboral__item
-    {
-        padding: 5px;
-        width: 90%;
-    }
-}
 
 
 /* ||||||||||||||| PAGINA CONTACTO ||||||||||||||||| */
@@ -977,14 +614,16 @@ footer .rrss__icons img
         "tagName inputName"
         "tagMail inputMail"
         "tagCountry inputCountry"
-        "tagMessage inputMessage"
         "tagServices inputServices"
+        "tagMessage inputMessage"
         "NONE buttonSend"
     ;
+
 /*     padding: 1vw 0; */
     text-align: right;
     gap: 1vw;
 }
+
 
 .contactAdress
 {
@@ -1138,4 +777,415 @@ input.buttonSend
     width: 35px;
     height: 35px;
     border-color: #F4E2D2;
+}
+
+/* <<<<<<<<<<<<<<<<<<  MEDIA QUERYS >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+@media screen and (max-width: 1440px)
+{
+    .infoPersonal h3
+    {
+        color: #B88BAD;
+        font-size: 3.5rem;
+        padding-left: 1vw;
+        font-weight: bolder;
+    }
+
+    .infoPersonal h4
+    {
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 0.3rem;
+    }
+    .infoPersonal h5
+    {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+        font-weight: lighter;
+    }
+
+    .infoPersonal p
+    {
+        font-size: 1.2rem;
+        font-weight: lighter;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .infoPersonal
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "titleExperiencia"
+            "experiencia"
+            "titleEducacion"
+            "educacion"
+            "titleConocimientos"
+            "redes";
+        justify-content: center;
+        padding: 2vh 4vw;
+        gap: 1vw;
+    }
+    .experienciaLaboral
+    {
+        height: 300;
+    }
+}
+
+
+@media screen and (max-width: 1200px)
+{
+    .banner__info
+    {
+        width: 350px;
+    } 
+    .banner__info h1
+    {
+        font-size: 4.5rem;
+        margin-bottom: 1vh;
+    }
+    .banner__info h2
+    {
+        font-size: 3.2rem;
+    }
+    .titulo--1
+    {
+        width: 27rem;
+    }
+    .titulo--2
+    {
+        width: 31rem;
+    }
+    .titulo span
+    {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    .navigation__menu li
+    {
+        padding: 0.2rem 0.6rem;
+        font-size: 1.6rem;
+    }
+    .planes__titulo
+    {
+        font-size: 3rem;
+        padding-left: 3vw;
+    }
+    #planes td
+    {
+        font-size: 2rem;
+    }
+    td.titulo__horizontal
+    {
+        width: 20%;
+    }
+    .servicios
+    {
+        column-gap: 8vw;
+    }
+
+}
+
+/* ||||||||||||| MEDIDAS DE TABLET |||||||||||||| */
+@media screen and (max-width: 768px)
+{
+    .navigation__logo 
+    {
+        width: 62px;
+        margin: 1% 2vw;
+    }
+    .navigation__menu
+    {
+        width: 70vw;
+    }
+    .banner__info
+    {
+        width: 270px;
+    } 
+    .banner__info h1
+    {
+        font-size: 3.5rem;
+        margin-bottom: 0.5vh;
+    }
+    .banner__info h2
+    {
+        font-size: 3.2rem;
+    }
+    .titulo--1
+    {
+        width: 21rem;
+    }
+    .titulo--2
+    {
+        width: 24rem;
+    }
+    .titulo span
+    {
+        margin-bottom: 1rem;
+    }
+    .menu__usos
+    {
+        display: none;
+    }
+    .menu_planes
+    {
+        display: none;
+    }
+}
+
+/* @media screen and (max-width: 600px)
+{
+    .navigation__menu li
+    {
+        padding: 0.2rem 0.6rem;
+        font-size: 1.6rem;
+    }
+    .planes__titulo
+    {
+        font-size: 2rem;
+        padding-left: 3vw;
+    }
+    #planes td
+    {
+        font-size: 1rem;
+    }
+    td.titulo__horizontal
+    {
+        width: 20%;
+    }
+    #planes h4
+    {
+        font-size: 1.3rem;
+    }
+} */
+
+@media screen and (max-width: 660px)
+{
+    .servicios
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "servicio1"
+        "servicio2"
+        "servicio3"
+        "servicio4";
+    }
+    .infoPersonal
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "titleExperiencia"
+            "experiencia"
+            "titleEducacion"
+            "educacion"
+            "titleConocimientos"
+            "redes";
+        justify-content: center;
+        padding: 2vh 4vw;
+        gap: 1vw;
+    }
+    .experienciaLaboral
+    {
+        height: auto;
+    }
+    .experienciaLaboral__item
+    {
+        padding: 5px;
+        width: 90%;
+    }
+}
+
+
+
+@media screen and (max-width: 600px)
+{
+    .navigation__menu li
+    {
+        padding: 0.2rem 0.6rem;
+        font-size: 1.6rem;
+    }
+    .banner
+    {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 4vw 0;
+    }
+
+    .banner__info
+    {
+        width: 100vw;
+        align-items:flex-start;
+        margin: 8vw 0;
+    } 
+
+    .banner__img
+    {
+        width: 80vw;
+        padding-right: 2vw;
+    }
+    .banner__info h1
+    {
+        font-size: 4.5rem;
+        margin-bottom: 1vh;
+    }
+    .banner__info h2
+    {
+        font-size: 3.2rem;
+    }
+    .titulo--1
+    {
+        width: 27rem;
+    }
+    .titulo--2
+    {
+        width: 31rem;
+    }
+    .titulo span
+    {
+        margin-bottom: 1.5rem;
+    }
+    .planes__titulo
+    {
+        font-size: 2rem;
+        padding-left: 3vw;
+    }
+    #planes td
+    {
+        font-size: 1rem;
+    }
+    /* ERROR no puedo resolver este tema, me pisa la alineacion a la derecha. ID me arruina la vida. */
+    #planes td h4
+    {
+        width: 20%;
+        font-size: 1.5rem;
+        text-align: right;
+    }
+    #planes th h4
+    {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    .infoPersonal
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "titleExperiencia"
+            "experiencia"
+            "titleEducacion"
+            "educacion"
+            "titleConocimientos"
+            "redes";
+        justify-content: center;
+        padding: 2vh 4vw;
+        gap: 1vw;
+    }
+    .experienciaLaboral
+    {
+        height: auto;
+    }
+    .experienciaLaboral__item
+    {
+        padding: 5px;
+        width: 90%;
+    }
+    .contactForm
+    {
+        background-color: #fff;
+        width: 350px;
+        display: grid;
+        grid-template-areas:
+            "tagName"
+            "inputName"
+            "tagMail"
+            "inputMail"
+            "tagCountry"
+            "inputCountry"
+            "tagServices"
+            "inputServices"
+            "tagMessage"
+            "inputMessage"
+            "buttonSend"
+        ;
+
+    /*     padding: 1vw 0; */
+        text-align: right;
+        gap: 1vw;
+
+    }
+    .contactForm label
+    {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 360px)
+{
+    .navigation__menu li
+    {
+        padding: 0.2rem 0.6rem;
+        font-size: 1.6rem;
+    }
+    .banner__info
+    {
+        width: 100vw;
+    } 
+    .banner__info h1
+    {
+        font-size: 2.8rem;
+        margin-bottom: 0.5vh;
+    }
+    .banner__info h2
+    {
+        font-size: 3.2rem;
+    }
+    .titulo--1
+    {
+        width: 17rem;
+    }
+    .titulo--2
+    {
+        width: 20rem;
+    }
+    .titulo span
+    {
+        margin-bottom: 1rem;
+    }
+    .planes__titulo
+    {
+        font-size: 1rem;
+        padding-left: 3vw;
+    }
+    #planes td
+    {
+        font-size: 0.7rem;
+    }
+    /* ERROR no puedo resolver este tema, me pisa la alineacion a la derecha. ID me arruina la vida. */
+    #planes td h4
+    {
+        width: 20%;
+        font-size: 1rem;
+        text-align: right;
+    }
+    #planes th h4
+    {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 1440px)
+{
+    .contactForm {
+        width: 556px;
+    }
 }

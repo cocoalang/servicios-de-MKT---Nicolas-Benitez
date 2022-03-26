@@ -56,18 +56,19 @@
                 <option value="ecu">Ecuador</option>
                 <option value="otro">Otro</option>
             </select>
-            <!-- Dejar mensaje -->
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Deje un mensaje aqui"></textarea>
+
             <!-- CHECKBOX para que seleccione una o más opciones -->
-            <label for="servicios">Servicios</label>
-            <fieldset name="servicios">
+            <label for="servicios" class="labelServicios">Servicios</label>
+            <fieldset name="servicios" class="fieldServicios">
                 <span><input type="checkbox" name="" id="" value="redac"> Redacción de contenidos</span> 
                 <span><input type="checkbox" name="" id="" value="redes"> Manejo de redes</span>
                 <span><input type="checkbox" name="" id="" value="comun"> Generar Comunidad</span>
                 <span><input type="checkbox" name="" id="" value="monet"> Monetizar</span>
                 
             </fieldset>
+            <!-- Dejar mensaje -->
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Deje un mensaje aqui"></textarea>
             <!-- Boton enviar -->
             <input type="submit" value="Enviar" class="buttonSend">
         </form>    
