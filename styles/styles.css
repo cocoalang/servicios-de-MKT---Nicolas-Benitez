@@ -71,36 +71,16 @@ body
 {
     font-weight: 100;
 }
-/* considero que no es necesario usar GRID en este caso. Esta utilizado como parte de la consigna. */
-/* .bodyIndex 
+
+.fondo
 {
-    display: grid;
-
-    grid-template-rows: 12vh;
-    grid-template-areas:
-        "navegador"
-        "banner"
-        "archivo"
-        "servicios"
-        "planes"
-        "footer";
-
-
-} */
-
-/* .banner
-{
-    grid-area: banner;
+    background-color: #F4E2D2;
 }
-
-#usos
+.resaltado
 {
-    grid-area: archivo;
-}
+    background-color: #DBC4DF;
+    padding: 0 0.5rem 0 3rem;
 
-.servicios
-{
-    grid-area: servicios;
 }
 
 /* <<<<< FORMATOS DE HEADER >>>>>>> */
@@ -115,6 +95,9 @@ header
     grid-area: navegador;
     display: flex;
     justify-content: right;
+/*     animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1; */
 }
 
 .navigation
@@ -217,7 +200,12 @@ header a:active
     flex-flow: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 4vw 0;
+    margin: 4vw 0 0 0;
+    padding-bottom: 4vw;
+    background: linear-gradient(to top, transparent, 10px, #eee3f0, 20px, transparent);
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
 }
 
 .banner__info
@@ -242,19 +230,22 @@ header a:active
 .titulo
 {
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
+    flex-wrap: wrap;
 }
 
 .titulo--1
 {
-    width: 35rem;
+/*     width: 35rem; */
     padding-left: 4vw;
+    padding-right: 0.7rem;
 }
 
 .titulo--2
 {
-    width: 40rem;
+/*     width: 40rem; */
     padding-left: 4vw;
+    padding-right: 0.7rem;
 }
 
 .titulo span
@@ -369,15 +360,15 @@ header a:active
     padding-top: 3vw;
 }
 
-#planes
+.planes
 {
 /*     border-collapse: separate; */
     border-spacing: 8px;
     font-size: 3rem;
 }
-table#planes
+table.planes
 {
-    width: 900px;
+    padding: 0 3vw;
 }
 
 .planes__titulo
@@ -387,20 +378,20 @@ table#planes
     padding-left: 3vw;
 }
 
-#planes h4
+.planes h4
 {
     font-size: 2.3rem;
     font-weight:bolder;
     background-color: #fff;    
 }
 
-#planes th
+.planes th
 {
     padding: 1%;
     color: #B88BAD;
 }
 
-#planes td
+.planes td
 {
     padding: 1%;
     background-color: #B88BAD;
@@ -409,25 +400,32 @@ table#planes
     width: 20%;
 }
 
-#planes td.titulo__horizontal
+/* #planes td.titulo__horizontal */
+td.titulo__horizontal
 {
     background-color: transparent;
-    text-align: right;
+/*     text-align: right; */
     color: #B88BAD;
-/*     width: 180px; */
+/*     display: flex;
+    flex-direction: row; */
 }
 
+.titulo__horizontal h4
+{
+    text-align: right;
+}
 
 /* <<<<<<< FORMATOS FOOTER  >>>>>>>>>>>>> */
 
 footer
 {
-    background-color: #DBC4DF;
+/*     background-color: #DBC4DF; */
     color: #FFF5FB;
     display: flex;
-    padding: 2vw 4vw;
+    padding: 4vw 4vw 2vw 4vw;
     gap: 2vw;
     margin-top: 3%;
+    background: linear-gradient(to bottom, transparent, 10%, #B88BAD);
 }
 
 footer ul
@@ -458,14 +456,15 @@ footer a:visited
 footer .rrss__icons
 {
     min-width: 40;
-    
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2vw;
+    gap: 1vw;
 }
 
 footer .rrss__icons img
 {
-    width: 50px;
-    height: 50px;
-    background-color: #F4E2D2;
+    height: 40px;
 }
 
 /* <<<<<<<<<<<<<< PÁGINA CONOCEME >>>>>>>>>>>>>>> */
@@ -546,6 +545,7 @@ footer .rrss__icons img
 .plataformasIconos
 {
     grid-area: redes;
+    
     background-color: #B88BAD;
     padding: 1vw;
 }
@@ -553,7 +553,22 @@ footer .rrss__icons img
 {
     width: 50px;
     height: 50px;
-    background-color: #F4E2D2;
+    padding: 0.3vw;
+}
+.plataformasIconos img:hover
+{
+    transform: 
+        scale(1.1);
+
+    transition: transform 1s;
+}
+.animate__fadeInRight
+{
+    animation-duration: 1s;
+}
+.animate__fadeInLeft
+{
+    animation-duration: 1s;
 }
 
 .educacion
@@ -562,6 +577,7 @@ footer .rrss__icons img
     background-color: #B88BAD;
     padding: 1vw;
     color: #fff;
+    animation-duration: 1s;
 }
 
 .educacion__item
@@ -657,13 +673,12 @@ footer .rrss__icons img
 
 .contactAdress .rrss__icons
 {
-    margin-bottom: 1vw;
+    margin: 1vw 0;
     border-color: #fff;
 }
 .contactAdress .rrss__icons img
 {
-    width: 35px;
-    height: 35px;
+    height: 27px;
     border-color: #F4E2D2;
 }
 .contactForm input
@@ -1187,5 +1202,17 @@ input.buttonSend
 {
     .contactForm {
         width: 556px;
+    }
+}
+
+
+/* |||||||||||||||||||         ANIMACIONES           |||||||||||||||||||| */
+
+@keyframes aparecer {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
     }
 }
