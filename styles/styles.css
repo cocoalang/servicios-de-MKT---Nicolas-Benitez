@@ -18,8 +18,35 @@ html
     /* 62.5% of 16px base font size is 10px */
     font-size: 62.5%;
 }
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.container-fluid
+{
+    padding: 0;
+    margin: 0;
+}
+.container
+{
+    padding: 0;
+}
+mark
+{
+    background-color: #B88BAD;
+    color: #fff;
+    padding-right: rem;
+    padding-left: 4vw;
+    margin: 0.5rem 0rem;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< BOOTSTRAP  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  VERSION   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
 
 /* <<<<<< FORMATOS GENERALES >>>>>>> */
+
 h1
 {
     font-size: 6rem;
@@ -44,47 +71,54 @@ p
 {
     font-size: 1.5rem;
 }
-
-a:link 
+.row
 {
-    color: orchid;
+    margin: 0;
 }
 
-  /* visited link */
-a:visited 
+/* <<<<<<<<<<<<<<<<< header/ navbar >>>>>>>>>>>>>>> */
+.navbar
 {
-    color: rgb(248, 143, 245);
+    background-color: #B88BAD;
+    margin: 1.5rem 0rem;
+    font-size: 1.2rem;
+    padding: 0 0 0 1vw;
 }
-  /* mouse over link */
-a:hover 
+header
 {
-    color: rgb(211, 52, 131);
+    background-color: rgba(255, 255, 255, 0.8);
 }
-
-  /* selected link */
-a:active 
+.nav-link
 {
+    color: #fff;
+}
+.navigation__logo
+{
+    align-items: center;
+    width: 100px;
+}
+.navigation
+{
+    display: flex;
+    align-items: center; 
+    justify-content: right;
+    padding-right: 2vw;
+}
+.dropdown-menu
+{
+    background-color: #f4e2d2e8;
+}
+.dropdown-item
+{
+    color: #B88BAD;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
-body
-{
-    font-weight: 100;
-}
-
-.fondo
-{
-    background-color: #F4E2D2;
-}
-.resaltado
-{
-    background-color: #DBC4DF;
-    padding: 0 0.5rem 0 3rem;
-
-}
 
 /* <<<<< FORMATOS DE HEADER >>>>>>> */
-header
+/* header
 {
     width: 100vw;
     margin: 0% 0%;
@@ -95,9 +129,6 @@ header
     grid-area: navegador;
     display: flex;
     justify-content: right;
-/*     animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count: 1; */
 }
 
 .navigation
@@ -135,7 +166,6 @@ header
 
 .navigation__menu li:hover
 {
-/*     font-size: 14px; */
     background-color: #DBC4DF;
 }
 
@@ -158,39 +188,31 @@ header
     padding: 2%;
 }
 
-
 .navigation__submenu li:hover
 {
     font-weight: bold;
 }
-
 .navigation__submenu li
 {
     background-color: #DBC4DF;
     padding: 3%;
 }
-
 header a:link 
 {
     color: #fff;
 }
-
-  /* visited link */
 header a:visited 
 {
     color: #fff;
 }
-  /* mouse over link */
 header a:hover 
 {
     color: #fff;
 }
-
-  /* selected link */
 header a:active 
 {
     font-weight: bold;
-}
+} */
 
 /* <<<<<AQUI FORMATOS DE PORTADA>>>>>>> */
 .banner
@@ -232,28 +254,7 @@ header a:active
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
-}
-
-.titulo--1
-{
-/*     width: 35rem; */
-    padding-left: 4vw;
-    padding-right: 0.7rem;
-}
-
-.titulo--2
-{
-/*     width: 40rem; */
-    padding-left: 4vw;
-    padding-right: 0.7rem;
-}
-
-.titulo span
-{
-    margin-bottom: 2rem;
-    background-color: #B88BAD;
-    display: flex;
-    justify-items: start;
+    row-gap: 1rem;
 }
 
 .banner__info h2
@@ -267,20 +268,36 @@ header a:active
 
 
 /* <<<<<<< FORMATOS USOS EN INDEX >>>>>>>>>>>>> */
-#usos
-{
-    display: flex;
-    justify-content: center;
-    padding-top: 12vh;
-/*     align-items: center; */
-    justify-items: center;
-}
 
-#usos img
+/* .nav-tabs .nav-link
+{
+    font-size: 3rem;
+    background-color: #DBC4DF;
+    color: #B88BAD;
+}
+.nav-link .active
+{
+    background-color: #fff;
+
+} */
+.carousel
 {
     width: 80vw;
+    margin: 9vw 10vw;
 }
-
+.carousel-caption h5
+{
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #B88BAD;
+}
+.carousel-caption p
+{
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #B88BAD;
+}
 
 
 /* <<<<<<< FORMATOS MAIN SERVICIOS EN INDEX >>>>>>>>>>>>> */
@@ -354,10 +371,34 @@ header a:active
 
 .tabla
 {
+    background-color: none;
     background-image: url(../images/fondo_ciencia.png);
-    display: flex;
+    background-position: center;
+    display: block;
     justify-content: center;
-    padding-top: 3vw;
+    padding: 1vw 10vw;
+
+}
+.table
+{
+    border-collapse: separate;
+    border-spacing: 10px;
+    min-width: 810px;
+}
+
+.tabla th
+{
+    background-color: #b88badd7;
+    color: #fff;
+    padding: 0 2rem;
+    padding: 1vw;
+}
+
+.table td
+{
+    background-color: #dbc4dfcc;
+    padding: 1vw;
+    color: #7a5972;
 }
 
 .planes
@@ -377,43 +418,37 @@ table.planes
     color: #B88BAD;
     padding-left: 3vw;
 }
-
-.planes h4
+.table thead
 {
-    font-size: 2.3rem;
-    font-weight:bolder;
-    background-color: #fff;    
+    font-size: 3.5rem;
+}
+.contenido_planes
+{
+    font-size: 3rem;
+}
+.contenido_planes td
+{
+    width: 80vw;
+}
+.table ul
+{
+    list-style: none;
+    padding-left: 0;
+}
+.columna--0
+{
+    width: 20vw;
+}
+.columna--1
+{
+    width: 80vw;
+}
+.columna--2
+{
+    width: 80vw;
 }
 
-.planes th
-{
-    padding: 1%;
-    color: #B88BAD;
-}
 
-.planes td
-{
-    padding: 1%;
-    background-color: #B88BAD;
-    color: #fff;
-    text-align: center;
-    width: 20%;
-}
-
-/* #planes td.titulo__horizontal */
-td.titulo__horizontal
-{
-    background-color: transparent;
-/*     text-align: right; */
-    color: #B88BAD;
-/*     display: flex;
-    flex-direction: row; */
-}
-
-.titulo__horizontal h4
-{
-    text-align: right;
-}
 
 /* <<<<<<< FORMATOS FOOTER  >>>>>>>>>>>>> */
 
@@ -795,7 +830,6 @@ input.buttonSend
 }
 
 /* <<<<<<<<<<<<<<<<<<  MEDIA QUERYS >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
 @media screen and (max-width: 1440px)
 {
     .infoPersonal h3
@@ -824,26 +858,8 @@ input.buttonSend
         font-size: 1.2rem;
         font-weight: lighter;
     }
-}
-@media screen and (max-width: 768px)
-{
-    .infoPersonal
-    {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "titleExperiencia"
-            "experiencia"
-            "titleEducacion"
-            "educacion"
-            "titleConocimientos"
-            "redes";
-        justify-content: center;
-        padding: 2vh 4vw;
-        gap: 1vw;
-    }
-    .experienciaLaboral
-    {
-        height: 300;
+    .contactForm {
+        width: 556px;
     }
 }
 
@@ -877,6 +893,28 @@ input.buttonSend
     }
 }
 
+@media screen and (max-width: 1024px)
+{
+        .carousel
+    {
+        width: 80vw;
+        margin: 9vw 10vw;
+    }
+    .carousel-caption h5
+    {
+        font-size: 3rem;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.85);
+        color: #B88BAD;
+    }
+    .carousel-caption p
+    {
+        font-size: 1.75rem;
+        background-color: rgba(255, 255, 255, 0.85);
+        color: #B88BAD;
+    }
+}
+
 @media screen and (max-width: 900px)
 {
     .navigation__menu li
@@ -907,14 +945,44 @@ input.buttonSend
 /* ||||||||||||| MEDIDAS DE TABLET |||||||||||||| */
 @media screen and (max-width: 768px)
 {
+    .infoPersonal
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "titleExperiencia"
+            "experiencia"
+            "titleEducacion"
+            "educacion"
+            "titleConocimientos"
+            "redes";
+        justify-content: center;
+        padding: 2vh 4vw;
+        gap: 1vw;
+    }
+    .experienciaLaboral
+    {
+        height: 300;
+    }
     .navigation__logo 
     {
-        width: 62px;
+        width: 90px;
         margin: 1% 2vw;
+    } 
+    .navbar{
+        margin: 0;
     }
-    .navigation__menu
+    .navbar .container-fluid
     {
-        width: 70vw;
+        justify-content: center;
+    }
+    .navbar-nav
+    {
+        align-items: center;
+    }
+    .navbar-toggler
+    {
+        font-size: 2rem;
+        border-radius: 0.5rem;
     }
     .banner__info
     {
@@ -948,6 +1016,34 @@ input.buttonSend
     .menu_planes
     {
         display: none;
+    }
+    .dropdown-menu
+    {
+        background-color: #B88BAD;
+        border: none;
+    }
+    .dropdown-item
+    {
+        color: #fff;
+        padding: 0.75rem 1rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    .tabla
+    {
+        padding: 3vw;
+    }
+    .table
+    {
+        min-width: 800px;
+    }
+    .table td
+    {
+        font-size: 2.2rem;
+    }
+    .table th
+    {
+        font-size: 2.1rem;
     }
 }
 
@@ -1012,6 +1108,7 @@ input.buttonSend
         padding: 5px;
         width: 90%;
     }
+
 }
 
 
@@ -1064,7 +1161,7 @@ input.buttonSend
     {
         margin-bottom: 1.5rem;
     }
-    .planes__titulo
+/*     .planes__titulo
     {
         font-size: 2rem;
         padding-left: 3vw;
@@ -1073,7 +1170,6 @@ input.buttonSend
     {
         font-size: 1rem;
     }
-    /* ERROR no puedo resolver este tema, me pisa la alineacion a la derecha. ID me arruina la vida. */
     #planes td h4
     {
         width: 20%;
@@ -1083,6 +1179,24 @@ input.buttonSend
     #planes th h4
     {
         font-size: 1.5rem;
+    } */
+    .carousel
+    {
+        width: 100vw;
+        margin: 9vw 0vw;
+    }
+    .carousel-caption h5
+    {
+        font-size: 2rem;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.85);
+        color: #B88BAD;
+    }
+    .carousel-caption p
+    {
+        font-size: 1.2rem;
+        background-color: rgba(255, 255, 255, 0.85);
+        color: #B88BAD;
     }
 }
 
@@ -1141,6 +1255,18 @@ input.buttonSend
         font-weight: bold;
         text-align: left;
     }
+    .table
+    {
+        min-width: 500px;
+    }
+    .table td
+    {
+        font-size: 1.8rem;
+    }
+    .table th
+    {
+        font-size: 1.9rem;
+    }
 }
 
 @media screen and (max-width: 360px)
@@ -1177,7 +1303,7 @@ input.buttonSend
     }
     .planes__titulo
     {
-        font-size: 1rem;
+        font-size: 2.5rem;
         padding-left: 3vw;
     }
     #planes td
@@ -1195,15 +1321,21 @@ input.buttonSend
     {
         font-size: 1rem;
     }
-}
-
-
-@media screen and (min-width: 1440px)
-{
-    .contactForm {
-        width: 556px;
+    .carousel-caption h5
+    {
+        font-size: 1.7rem;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.85);
+        color: #B88BAD;
+    }
+    .carousel-caption p
+    {
+        font-size: 1rem;
+        background-color: rgba(255, 255, 255, 0.85);
+        color: #B88BAD;
     }
 }
+
 
 
 /* |||||||||||||||||||         ANIMACIONES           |||||||||||||||||||| */

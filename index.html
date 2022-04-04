@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community Science</title>
     <link rel="shortcut icon" href="flat-satellite.ico" type="image/x-icon"> <!-- crear logo favicon -->
-    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="bodyIndex">
-    <header>
-        <nav class="navigation">
-            <a href="index.html"><img src="images/dna_icon.png" alt="Logo Cardenas MKT" class="navigation__logo" /></a>
+    <header class="container-fluid sticky-top">
+<!--         <nav class="navigation">
+
             <ul class="navigation__menu">
                 <li class="menu__usos"><a href="#usos">¿Usar Redes?</a></li>
                 <li class="menu_planes"><a href="#planes">Planes</a></li>
@@ -24,25 +25,69 @@
                         <li>Campañas</li>
                     </ul>
                 </li>
-                <li><a href="pages/blog.html">Blog</a></li><!-- No se va a poder hacer un Blog en una pagina obviamente. Esquematico. -->
+                <li><a href="pages/blog.html">Blog</a></li>
                 <li><a href="pages/portfolio.html">Portfolio</a></li>
                 <li><a href="pages/contacto.html">Contactame</a></li>
                 <li><a href="pages/conoceme.html">Más sobre mi</a></li>
             </ul>
-            <!-- Menu flotante, en movile desplegable de lineas -->
-        </nav>
+
+        </nav> -->
+        <div class="row justify-content-center justify-content-md-end ">
+            <div class="col-12 col-md-3 navigation justify-content-center justify-content-md-end">
+                <a class="navigation__logo" href="index.html"><img src="images/dna_icon.png" alt="Logo Cardenas MKT" class="img-fluid" /></a>
+            </div>
+    
+            <nav class="navbar navbar-expand-md navbar-dark col-12 col-md-9 align-content-center">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Servicios
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Community Management</a></li>
+                                    <li><a class="dropdown-item" href="#">Pauta en Redes</a></li>
+                                    <li><a class="dropdown-item" href="#">Redacción</a></li>
+                                    <li><a class="dropdown-item" href="#">Plan de Social Media</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Más sobre mi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contactame</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
     </header>
 
-    <section class="banner"><!-- Esta es la portada principal con una imagen a la derecha y texto a la izquierda. -->
+    <section class="banner container-fluid"><!-- Esta es la portada principal con una imagen a la derecha y texto a la izquierda. -->
         <div class="banner__info">
-            <h1 class="titulo"><span class="titulo--1">Community</span><span class="titulo--2">Management</span></h1>
+<!--             <h1 class="titulo container"><span class="titulo--1 row">Community  </span><span class="titulo--2 row">Management  </span></h1> -->
+            <h1 class="titulo container"><mark class="row">Community</mark><mark class="row">Management</mark></h1>
             <h2>y Comunicación Científica</h2>
         </div>
-        <img class="banner__img" src="images/banner_icons.png" alt="imagen comunicación de Ciencia" class="banner__image">
+        <img class="img-fluid banner__img" src="images/banner_icons.png" alt="imagen comunicación de Ciencia" class="banner__image">
     </section>
 
-    <section id="usos"><!-- contenido en X solapas con Beneficios de promocionarse en redes sociales. Cada solapa una imagen o video o contenido dinamico? -->
-        <img src="images/tabs_info.png" alt="Información sobre redes sociales" class="tabsContent">
+    <section class="content-fluid" id="usos"><!-- contenido en X solapas con Beneficios de promocionarse en redes sociales. Cada solapa una imagen o video o contenido dinamico? -->
+<!--         <img src="images/tabs_info.png" alt="Información sobre redes sociales" class="img-fluid tabsContent"> -->
 <!--         <h4>Solapa 1</h4>
         <p>contenido que sería visual con algo de texto (no parrafo)</p>
         <h4>Solapa 2</h4>
@@ -51,7 +96,73 @@
         <p>contenido que sería visual con algo de texto (no parrafo)</p>
         <h4>Solapa 4</h4>
         <p>contenido que sería visual con algo de texto (no parrafo)</p> -->
+<!--         <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+                    role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+                    role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button"
+                    role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo iusto earum, amet totam nam doloribus.</div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores atque delectus fugiat velit libero distinctio excepturi veniam laborum obcaecati, alias enim perspiciatis possimus vel totam quidem, aperiam aliquid eum laboriosam.</div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore deserunt debitis iste? Voluptatum ullam ipsam maxime repudiandae facilis ipsa ex!</div>
+        </div> -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/banner_como_funcionan.png" class="d-block w-100" alt="...">
+<!--                     <div class="carousel-caption d-none d-md-block"> -->
+                    <div class="carousel-caption">
+                        <h5>¿Es importante saber cómo funcionan las Redes?</h5>
+                        <p>Cada red social cuenta con un algoritmo. Las redes sociales se han tornado menos “masivas” y más individuales, ya que, estas nos muestran contenido de acuerdo a nuestro comportamiento</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/banner_algoritmo.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h5>El Famoso Algoritmo</h5>
+                        <p>Un algoritmo es el conjunto de normas de programación que hará que una publicación se muestre mucho o poco en una red social</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner_como_publicar.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h5>No "publiques por publicar"</h5>
+                        <p>Existen varios puntos que debemos tomar en cuenta antes de llevar a cabo una campaña de comunicación en las redes sociales.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner_ciencia_redes.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h5>¿Como comunicamos ciencia en Redes Sociales?</h5>
+                        <p>Entender del tema y podér expresarlo de forma sencilla para todo público nos permite generar comunidad.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
     </section>
+
+
 
     <main class="servicios" id="servicios"><!-- aca la idea es que haya dos columnas en PC y una sola en Mobile con un icono vectorial, titulo y texto de los servicios. -->
         <article class="srv1">
@@ -84,52 +195,81 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat consectetur diam, sit amet efficitur ante lobortis id. Duis vehicula id metus ultricies facilisis. Nunc efficitur commodo urna cursus auctor. Donec dictum, eros eget varius ultrices, erat lacus sollicitudin diam, sed pulvinar ante turpis et mauris. </p>
         </article>
     </main>
-
-<!--     <aside>
-        <p>me dejaron de costado</p>
-        <ul>
-            <li>opcion 1</li>
-            <li>opcion 2</li>
-            <li>opcion 3</li>
-            <li>opcion 4</li>
-            <li>opcion 5</li>
-        </ul>
-    </aside> -->
-    <section class="tabla">
-            <table class="planes" id="planes">
-                <caption>
-                    <h2 class="planes__titulo">Planes de contratación</h2>
-                </caption>
-                <th><!-- vacio --></th>
-                <th><h4>Instagram</h4></th>
-                <th><h4>Facebook</h4></th>
-                <th><h4>TikTok</h4></th>
-                <th><h4>LinkedIn</h4></th>
-            
+    <h2 class="planes__titulo">Planes de contratación</h2>
+    <section class="content-fluid table-responsive tabla">
+        <table class="table">
+<!--             <colgroup>
+                <col class="columna--0">
+                <col class="columna--1">
+                <col class="columna--2">
+            </colgroup> -->
+            <thead>
+                <th scope="col" class="columna--0"></th>
+                <th scope="col" class="columna--1">Básico</th>
+                <th scope="col" class="columna--2">Avanzado</th>
+            </thead>
+            <tbody class="contenido_planes">
                 <tr>
-                    <td class="titulo__horizontal"><h4>Básico</h4></td>
-                    <td>Imagen + Contenido</td>
-                    <td>Reposteo</td>
-                    <td>NO</td>
-                    <td>NO</td>
+                    <th scope="row">Cantidad de Publicaciones</th>
+                    <td>
+                        <ul>
+                            <li>4 Publicaciones de "alta complejidad"</li>
+                            <li>8 Publicaciones de "Baja complejidad".</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>8 Publicaciones de "alta complejidad"</li>
+                            <li>12 Publicaciones de "Baja complejidad".</li>
+                        </ul>
+                    </td>
                 </tr>
             
                 <tr>
-                    <td  class="titulo__horizontal"><h4>Intermedio</h4></td>
-                    <td>Imagen + Contenido</td>
-                    <td>Reposteo</td>
-                    <td>NO</td>
-                    <td>Imagen + Contenido específico</td>
+                    <th scope="row">Beneficios</th>
+                    <td colspan="2">
+                        <ul>
+                            <li>Copywriting (descripción) de las publicaciones con emoticones y hashtags.</li>
+                            <li>Calendario de publicaciones quincenales, previa reunión con el cliente.</li>
+                            <li>Planteamiento de ideas de campañas publicitarias y publicaciones*. </li>
+                            <li>Lectura e informe quincenal de las métricas de cada red social.</li>
+                        </ul>
+                    </td>
+<!--                     <td>&nbsp;</td> -->
+<!--                     <td>
+                        <ul>
+                            <li>Copywriting (descripción) de las publicaciones con emoticones y hashtags.</li>
+                            <li>Calendario de publicaciones quincenales, previa reunión con el cliente.</li>
+                            <li>Planteamiento de ideas de campañas publicitarias y publicaciones*. </li>
+                            <li>Lectura e informe quincenal de las métricas de cada red social.</li>
+                        </ul>
+                    </td> -->
                 </tr>
 
                 <tr>
-                    <td class="titulo__horizontal"><h4>Full</h4></td>
-                    <td>Imagen + Contenido</td>
-                    <td>Imagen + Contenido específico</td>
-                    <td>Imagen + Contenido específico</td>
-                    <td>Imagen + Contenido específico</td>
+                    <th scope="row">Twitter</th>
+                    <td>Publicación de 12 Tweets (3 Tweets semanales) al mes que pueden ser en hilos o individuales según el requerimiento del cliente.</td>
+                    <td>Publicación de 20 Tweets (5 Tweets semanales) al mes que pueden ser en hilos o individuales según el requerimiento del cliente.</td>
                 </tr>
-            </table>
+                <tr>
+                    <th scope="row">Gestión de Comunidad</th>
+                    <td colspan="2">
+                        <ul>
+                            <li>Respuesta y derivación de comentarios/mensajes dentro del horario laboral.</li>
+                            <li>Monitoreo de la audiencia y de la competencia.</li>
+                            <li>Manual de gestión de crisis. </li>
+                        </ul>
+                    </td>
+<!--                     <td>
+                        <ul>
+                            <li>Respuesta y derivación de comentarios/mensajes dentro del horario laboral.</li>
+                            <li>Monitoreo de la audiencia y de la competencia.</li>
+                            <li>Manual de gestión de crisis. </li>
+                        </ul>
+                    </td> -->
+                </tr>
+            </tbody>
+        </table>
     </section>
     <footer>
         <nav>
@@ -155,7 +295,7 @@
     <script>
     new WOW().init();
     </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
 
