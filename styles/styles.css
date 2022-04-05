@@ -29,13 +29,14 @@ html
 .container
 {
     padding: 0;
+    margin: 0;
 }
 mark
 {
     background-color: #B88BAD;
     color: #fff;
-    padding-right: rem;
-    padding-left: 4vw;
+    padding: 0 0.5rem 0 4vw;
+/*     padding-left: 4vw; */
     margin: 0.5rem 0rem;
 }
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< BOOTSTRAP  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -77,12 +78,24 @@ p
 }
 
 /* <<<<<<<<<<<<<<<<< header/ navbar >>>>>>>>>>>>>>> */
+.bi-house-door-fill
+{
+    font-size: larger;
+}
 .navbar
 {
     background-color: #B88BAD;
     margin: 1.5rem 0rem;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     padding: 0 0 0 1vw;
+}
+.navbar-nav
+{
+    align-items: center;
+}
+.navbar-nav li
+{
+    margin-right: 1.5vw;
 }
 header
 {
@@ -115,104 +128,20 @@ header
     font-size: 1.25rem;
     font-weight: bold;
 }
-
-
-/* <<<<< FORMATOS DE HEADER >>>>>>> */
-/* header
+.navbar-toggler
 {
-    width: 100vw;
-    margin: 0% 0%;
-    padding: 1vh 0;
-    background-color: rgba(255, 255, 255, 0.7);
-    position: sticky;
-    top: 0px;
-    grid-area: navegador;
-    display: flex;
-    justify-content: right;
-}
-
-.navigation
-{
-    top: 1%;
-    font-size: 0;
-    display: flex;
-    align-items: center; 
-}
-
-.navigation__logo 
-{
-    width: 8vw;
-    margin: 1% 2vw;
-}
-
-.navigation__menu
-{
-    display: flex;
-    list-style: none;
-    width: 80vw;
-    background-color: #B88BAD;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding-right: 4vw;
-    flex-wrap: wrap;
-}
-
-.navigation__menu li
-{
-    list-style: none;
-    padding: 0.2rem 0.6rem;
     font-size: 2rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
 }
-
-.navigation__menu li:hover
+.nav-item.dropdown
 {
-    background-color: #DBC4DF;
+    text-align: center;
 }
-
-.navigation__submenu
+.dropdown-menu.show
 {
-    display: none;
-    position: absolute;
-    top: 100%
+    text-align: center;
 }
-
-.navigation__menu li a
-{
-    text-decoration: none;
-}
-
-.navigation__menu li:hover ul
-{
-    display: block;
-    background-color: #DBC4DF;
-    padding: 2%;
-}
-
-.navigation__submenu li:hover
-{
-    font-weight: bold;
-}
-.navigation__submenu li
-{
-    background-color: #DBC4DF;
-    padding: 3%;
-}
-header a:link 
-{
-    color: #fff;
-}
-header a:visited 
-{
-    color: #fff;
-}
-header a:hover 
-{
-    color: #fff;
-}
-header a:active 
-{
-    font-weight: bold;
-} */
 
 /* <<<<<AQUI FORMATOS DE PORTADA>>>>>>> */
 .banner
@@ -269,17 +198,6 @@ header a:active
 
 /* <<<<<<< FORMATOS USOS EN INDEX >>>>>>>>>>>>> */
 
-/* .nav-tabs .nav-link
-{
-    font-size: 3rem;
-    background-color: #DBC4DF;
-    color: #B88BAD;
-}
-.nav-link .active
-{
-    background-color: #fff;
-
-} */
 .carousel
 {
     width: 80vw;
@@ -303,12 +221,6 @@ header a:active
 /* <<<<<<< FORMATOS MAIN SERVICIOS EN INDEX >>>>>>>>>>>>> */
 .servicios
 {
-/*     color: #B88BAD;
-    display: flex; 
-    flex-direction: row;
-    flex-wrap: wrap; 
-    flex-flow: row wrap;
-    align-content:flex-start; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -325,7 +237,6 @@ header a:active
     text-align: center;
 }
 
-
 .servicios article img
 {
     height: 80%;
@@ -337,35 +248,24 @@ header a:active
     flex-direction: column;
     align-self: start;
     justify-content: center;
-/*     width: 30vw; */
-/*    text-align: center;
-    padding: 1rem; */
 }
-
 .servicios article h3
 {
     display: inline-block;
-/*     text-align: center; */
     align-self: center;
-/*     font-weight: 400; */
     padding: .8rem;
     height: 7rem;
     width: 80%;
 }
-
 .servicios article p
 {
     padding: .5em;
 }
-
 .servicios div
 {
     height: 35%;
     margin-bottom: 2%;
 }
-
-
-
 
 /* <<<<<<< FORMATOS PLANES  >>>>>>>>>>>>> */
 
@@ -377,6 +277,9 @@ header a:active
     display: block;
     justify-content: center;
     padding: 1vw 10vw;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
 
 }
 .table
@@ -502,6 +405,14 @@ footer .rrss__icons img
     height: 40px;
 }
 
+
+/* <<<<<<<<<<<<<<<<<<<<<    PÁGINA BLOG    >>>>>>>>>>>>>>>>>>>>> */
+.card
+{
+    box-shadow: 3px 3px 3px #B88BAD;
+}
+
+
 /* <<<<<<<<<<<<<< PÁGINA CONOCEME >>>>>>>>>>>>>>> */
 
 .infoPersonal
@@ -625,24 +536,6 @@ footer .rrss__icons img
     padding-bottom: 0.3rem;
 }
 
-/* .seccionVideo
-{
-    margin-top: 5%;
-}
-.seccionVideo h3
-{
-    color: #B88BAD;
-    padding-bottom: 1rem;
-}
-
-.seccionVideo iframe
-{
-    width: ;
-} */
-
-
-
-
 /* ||||||||||||||| PAGINA CONTACTO ||||||||||||||||| */
 
 .contact
@@ -653,7 +546,6 @@ footer .rrss__icons img
     justify-content: center;
     padding: 4vw 4vw;
     gap: 1vw;
-/*     background-color: #B88BAD; */
 }
 
 .contactForm
@@ -667,10 +559,7 @@ footer .rrss__icons img
         "tagCountry inputCountry"
         "tagServices inputServices"
         "tagMessage inputMessage"
-        "NONE buttonSend"
-    ;
-
-/*     padding: 1vw 0; */
+        "NONE buttonSend";
     text-align: right;
     gap: 1vw;
 }
@@ -705,7 +594,6 @@ footer .rrss__icons img
     width: 98%;
     height: calc(98% / 4 * 3);
 }
-
 .contactAdress .rrss__icons
 {
     margin: 1vw 0;
@@ -771,12 +659,8 @@ input.buttonSend
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-/*     gap: 2vw; */
-/*     justify-content: space-around; */
     margin: 2vw;
-/*     justify-content: center; */
     justify-content: space-evenly;
-    
     gap: 3vw;
 }
 
@@ -810,7 +694,6 @@ input.buttonSend
     width: 98%;
     height: calc(98% / 4 * 3);
 }
-
 .projects .rrss__icons
 {
     margin-bottom: 1vw;
@@ -830,7 +713,7 @@ input.buttonSend
 }
 
 /* <<<<<<<<<<<<<<<<<<  MEDIA QUERYS >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-@media screen and (max-width: 1440px)
+@media screen and (min-width: 1440px)
 {
     .infoPersonal h3
     {
@@ -861,6 +744,37 @@ input.buttonSend
     .contactForm {
         width: 556px;
     }
+    .navbar
+    {
+        margin: 1.5rem 0rem;
+        font-size: 2.5rem;
+        padding: 0 0 0 2vw;
+    }
+    body
+    {
+        font-size: 3rem;
+    }
+    .servicios article
+    {
+        width: 40vw;
+        column-gap: 5vw;
+    }
+    .servicios article h3
+    {
+        font-size: 6rem;
+        padding: .8rem;
+        height: 15rem;
+        width: 80%;
+    }
+    .servicios article p
+    {
+        font-size: 4rem;
+    }
+    .servicios div
+    {
+        height: 35%;
+        margin-bottom: 2%;
+    }
 }
 
 
@@ -890,6 +804,14 @@ input.buttonSend
     .titulo span
     {
         margin-bottom: 1.5rem;
+    }
+    .servicios
+    {
+        column-gap: 12vw;
+    }
+    .servicios article
+    {
+        width: 30vw;
     }
 }
 
@@ -939,7 +861,6 @@ input.buttonSend
     {
         column-gap: 8vw;
     }
-
 }
 
 /* ||||||||||||| MEDIDAS DE TABLET |||||||||||||| */
@@ -978,11 +899,6 @@ input.buttonSend
     .navbar-nav
     {
         align-items: center;
-    }
-    .navbar-toggler
-    {
-        font-size: 2rem;
-        border-radius: 0.5rem;
     }
     .banner__info
     {
@@ -1045,33 +961,19 @@ input.buttonSend
     {
         font-size: 2.1rem;
     }
+    .home
+    {
+        display: none;
+    }
+    .servicios
+    {
+        column-gap: 5vw;
+    }
+    .servicios article
+    {
+        width: 40vw;
+    }
 }
-
-/* @media screen and (max-width: 600px)
-{
-    .navigation__menu li
-    {
-        padding: 0.2rem 0.6rem;
-        font-size: 1.6rem;
-    }
-    .planes__titulo
-    {
-        font-size: 2rem;
-        padding-left: 3vw;
-    }
-    #planes td
-    {
-        font-size: 1rem;
-    }
-    td.titulo__horizontal
-    {
-        width: 20%;
-    }
-    #planes h4
-    {
-        font-size: 1.3rem;
-    }
-} */
 
 @media screen and (max-width: 660px)
 {
@@ -1084,6 +986,7 @@ input.buttonSend
         "servicio2"
         "servicio3"
         "servicio4";
+        column-gap: none;
     }
     .infoPersonal
     {
@@ -1108,10 +1011,11 @@ input.buttonSend
         padding: 5px;
         width: 90%;
     }
-
+    .servicios article
+    {
+        width: 100%;
+    }
 }
-
-
 
 @media screen and (max-width: 600px)
 {
@@ -1127,14 +1031,12 @@ input.buttonSend
         align-items: center;
         margin: 4vw 0;
     }
-
     .banner__info
     {
         width: 100vw;
         align-items:flex-start;
         margin: 8vw 0;
     } 
-
     .banner__img
     {
         width: 80vw;
@@ -1161,25 +1063,6 @@ input.buttonSend
     {
         margin-bottom: 1.5rem;
     }
-/*     .planes__titulo
-    {
-        font-size: 2rem;
-        padding-left: 3vw;
-    }
-    #planes td
-    {
-        font-size: 1rem;
-    }
-    #planes td h4
-    {
-        width: 20%;
-        font-size: 1.5rem;
-        text-align: right;
-    }
-    #planes th h4
-    {
-        font-size: 1.5rem;
-    } */
     .carousel
     {
         width: 100vw;
@@ -1243,11 +1126,8 @@ input.buttonSend
             "inputMessage"
             "buttonSend"
         ;
-
-    /*     padding: 1vw 0; */
         text-align: right;
         gap: 1vw;
-
     }
     .contactForm label
     {
@@ -1300,26 +1180,6 @@ input.buttonSend
     .titulo span
     {
         margin-bottom: 1rem;
-    }
-    .planes__titulo
-    {
-        font-size: 2.5rem;
-        padding-left: 3vw;
-    }
-    #planes td
-    {
-        font-size: 0.7rem;
-    }
-    /* ERROR no puedo resolver este tema, me pisa la alineacion a la derecha. ID me arruina la vida. */
-    #planes td h4
-    {
-        width: 20%;
-        font-size: 1rem;
-        text-align: right;
-    }
-    #planes th h4
-    {
-        font-size: 1rem;
     }
     .carousel-caption h5
     {

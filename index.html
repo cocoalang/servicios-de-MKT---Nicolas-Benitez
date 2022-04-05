@@ -6,32 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community Science</title>
     <link rel="shortcut icon" href="flat-satellite.ico" type="image/x-icon"> <!-- crear logo favicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="bodyIndex">
     <header class="container-fluid sticky-top">
-<!--         <nav class="navigation">
-
-            <ul class="navigation__menu">
-                <li class="menu__usos"><a href="#usos">¿Usar Redes?</a></li>
-                <li class="menu_planes"><a href="#planes">Planes</a></li>
-                <li><a href="">Servicios</a>
-                    <ul class="navigation__submenu">
-                        <li>Plan de Social Media</li>
-                        <li>Redacción</li>
-                        <li>Community</li>
-                        <li>Campañas</li>
-                    </ul>
-                </li>
-                <li><a href="pages/blog.html">Blog</a></li>
-                <li><a href="pages/portfolio.html">Portfolio</a></li>
-                <li><a href="pages/contacto.html">Contactame</a></li>
-                <li><a href="pages/conoceme.html">Más sobre mi</a></li>
-            </ul>
-
-        </nav> -->
         <div class="row justify-content-center justify-content-md-end ">
             <div class="col-12 col-md-3 navigation justify-content-center justify-content-md-end">
                 <a class="navigation__logo" href="index.html"><img src="images/dna_icon.png" alt="Logo Cardenas MKT" class="img-fluid" /></a>
@@ -45,8 +26,8 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <li class="nav-item home">
+                                <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-door-fill"></i></a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -61,13 +42,16 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Más sobre mi</a>
+                                <a class="nav-link" href="pages/blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
+                                <a class="nav-link" href="pages/conoceme.html">Más sobre mi</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contactame</a>
+                                <a class="nav-link" href="pages/portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/contacto.html">Contactame</a>
                             </li>
                         </ul>
                     </div>
@@ -77,40 +61,15 @@
 
     </header>
 
-    <section class="banner container-fluid"><!-- Esta es la portada principal con una imagen a la derecha y texto a la izquierda. -->
+    <section class="banner container-fluid">
         <div class="banner__info">
-<!--             <h1 class="titulo container"><span class="titulo--1 row">Community  </span><span class="titulo--2 row">Management  </span></h1> -->
             <h1 class="titulo container"><mark class="row">Community</mark><mark class="row">Management</mark></h1>
             <h2>y Comunicación Científica</h2>
         </div>
         <img class="img-fluid banner__img" src="images/banner_icons.png" alt="imagen comunicación de Ciencia" class="banner__image">
     </section>
 
-    <section class="content-fluid" id="usos"><!-- contenido en X solapas con Beneficios de promocionarse en redes sociales. Cada solapa una imagen o video o contenido dinamico? -->
-<!--         <img src="images/tabs_info.png" alt="Información sobre redes sociales" class="img-fluid tabsContent"> -->
-<!--         <h4>Solapa 1</h4>
-        <p>contenido que sería visual con algo de texto (no parrafo)</p>
-        <h4>Solapa 2</h4>
-        <p>contenido que sería visual con algo de texto (no parrafo)</p>
-        <h4>Solapa 3</h4>
-        <p>contenido que sería visual con algo de texto (no parrafo)</p>
-        <h4>Solapa 4</h4>
-        <p>contenido que sería visual con algo de texto (no parrafo)</p> -->
-<!--         <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
-                    role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
-                    role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button"
-                    role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
-            </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo iusto earum, amet totam nam doloribus.</div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores atque delectus fugiat velit libero distinctio excepturi veniam laborum obcaecati, alias enim perspiciatis possimus vel totam quidem, aperiam aliquid eum laboriosam.</div>
-            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore deserunt debitis iste? Voluptatum ullam ipsam maxime repudiandae facilis ipsa ex!</div>
-        </div> -->
+    <section class="content-fluid" id="usos">
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -122,7 +81,6 @@
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
                     <img src="images/banner_como_funcionan.png" class="d-block w-100" alt="...">
-<!--                     <div class="carousel-caption d-none d-md-block"> -->
                     <div class="carousel-caption">
                         <h5>¿Es importante saber cómo funcionan las Redes?</h5>
                         <p>Cada red social cuenta con un algoritmo. Las redes sociales se han tornado menos “masivas” y más individuales, ya que, estas nos muestran contenido de acuerdo a nuestro comportamiento</p>
@@ -162,12 +120,10 @@
 
     </section>
 
-
-
-    <main class="servicios" id="servicios"><!-- aca la idea es que haya dos columnas en PC y una sola en Mobile con un icono vectorial, titulo y texto de los servicios. -->
+    <main class="servicios" id="servicios">
         <article class="srv1">
             <div>
-                <img src="images/icon_redaccion.png" alt="dibujo de lapicera en lineas"><!-- entiendo que el tamaño de los iconos va a ser creado con una class tipo class="iconos" y por CSS -->
+                <img src="images/icon_redaccion.png" alt="dibujo de lapicera en lineas">
             </div>
             <h3>Redacción de contenidos</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat consectetur diam, sit amet efficitur ante lobortis id. Duis vehicula id metus ultricies facilisis. Nunc efficitur commodo urna cursus auctor. Donec dictum, eros eget varius ultrices, erat lacus sollicitudin diam, sed pulvinar ante turpis et mauris. dictum, eros eget varius ultrices, erat lacus sollicitudin diam, sed pulvinar ante turpis et mauris. </p>
@@ -188,7 +144,7 @@
         </article>
         <article class="srv4">
             <div>
-                <img src="images/icon_monetizar.png" alt="icono dolar"><!-- los iconos estan creados "así nomas" quedaron desproporcionados. -->
+                <img src="images/icon_monetizar.png" alt="icono dolar">
             </div>
             
             <h3>Monetizá tu emprendimiento</h3>
@@ -196,13 +152,8 @@
         </article>
     </main>
     <h2 class="planes__titulo">Planes de contratación</h2>
-    <section class="content-fluid table-responsive tabla">
+    <section class="content-fluid table-responsive tabla wow">
         <table class="table">
-<!--             <colgroup>
-                <col class="columna--0">
-                <col class="columna--1">
-                <col class="columna--2">
-            </colgroup> -->
             <thead>
                 <th scope="col" class="columna--0"></th>
                 <th scope="col" class="columna--1">Básico</th>
@@ -235,15 +186,6 @@
                             <li>Lectura e informe quincenal de las métricas de cada red social.</li>
                         </ul>
                     </td>
-<!--                     <td>&nbsp;</td> -->
-<!--                     <td>
-                        <ul>
-                            <li>Copywriting (descripción) de las publicaciones con emoticones y hashtags.</li>
-                            <li>Calendario de publicaciones quincenales, previa reunión con el cliente.</li>
-                            <li>Planteamiento de ideas de campañas publicitarias y publicaciones*. </li>
-                            <li>Lectura e informe quincenal de las métricas de cada red social.</li>
-                        </ul>
-                    </td> -->
                 </tr>
 
                 <tr>
@@ -260,13 +202,6 @@
                             <li>Manual de gestión de crisis. </li>
                         </ul>
                     </td>
-<!--                     <td>
-                        <ul>
-                            <li>Respuesta y derivación de comentarios/mensajes dentro del horario laboral.</li>
-                            <li>Monitoreo de la audiencia y de la competencia.</li>
-                            <li>Manual de gestión de crisis. </li>
-                        </ul>
-                    </td> -->
                 </tr>
             </tbody>
         </table>
@@ -274,7 +209,7 @@
     <footer>
         <nav>
             <ul>
-                <li><a href="pages/blog.html">Blog</a></li><!-- No se va a poder hacer un Blog en una pagina obviamente. Esquematico. -->
+                <li><a href="pages/blog.html">Blog</a></li>
                 <li><a href="pages/portfolio.html">Portfolio</a></li>
                 <li><a href="pages/contacto.html">Contactame</a></li>
                 <li><a href="pages/conoceme.html">Más sobre mi</a></li>
