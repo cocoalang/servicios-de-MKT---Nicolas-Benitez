@@ -418,7 +418,7 @@ footer .rrss__icons img
 .infoPersonal
 {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 60% 40%;
     grid-template-rows: repeat(1fr 4);
     grid-template-areas: 
         "titleExperiencia titleEducacion"
@@ -437,7 +437,7 @@ footer .rrss__icons img
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
-    height: 400px;
+    height: 443px;
     color: #fff;
 }
 
@@ -456,7 +456,7 @@ footer .rrss__icons img
 }
 .infoPersonal h4
 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     letter-spacing: 0.1rem;
     margin-bottom: 0.3rem;
 }
@@ -469,7 +469,7 @@ footer .rrss__icons img
 
 .infoPersonal p
 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: lighter;
 }
 
@@ -529,6 +529,7 @@ footer .rrss__icons img
 .educacion__item
 {
     border-bottom:dashed 3px #DBC4DF;
+    padding: 0.5rem 0;
 }
 
 .educacion h4
@@ -738,7 +739,7 @@ input.buttonSend
 
     .infoPersonal p
     {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         font-weight: lighter;
     }
     .contactForm {
@@ -817,7 +818,32 @@ input.buttonSend
 
 @media screen and (max-width: 1024px)
 {
-        .carousel
+    .infoPersonal h3
+    {
+        color: #B88BAD;
+        font-size: 2.5rem;
+        padding-left: 1vw;
+        font-weight: bolder;
+    }
+    .infoPersonal h4
+    {
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 0.3rem;
+    }
+    .infoPersonal h5
+    {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+        font-weight: lighter;
+    }
+    .infoPersonal p
+    {
+        font-size: 1.1rem;
+        font-weight: lighter;
+    }
+
+    .carousel
     {
         width: 80vw;
         margin: 9vw 10vw;
@@ -880,10 +906,10 @@ input.buttonSend
         padding: 2vh 4vw;
         gap: 1vw;
     }
-    .experienciaLaboral
+/*     .experienciaLaboral
     {
         height: 300;
-    }
+    } */
     .navigation__logo 
     {
         width: 90px;
@@ -1009,7 +1035,12 @@ input.buttonSend
     .experienciaLaboral__item
     {
         padding: 5px;
-        width: 90%;
+        width: 95%;
+    }
+    .educacion__item
+    {
+        width: 95%;
+        padding: 1rem 0;
     }
     .servicios article
     {
