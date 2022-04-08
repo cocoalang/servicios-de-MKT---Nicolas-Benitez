@@ -1,0 +1,545 @@
+@media screen and (min-width: 1440px)
+{
+    .infoPersonal {
+        h3
+        {
+            color: $colorPpal;
+            font-size: 3.5rem;
+            padding-left: 1vw;
+            font-weight: bolder;
+        }
+    
+        h4
+        {
+            font-size: 1.5rem;
+            letter-spacing: 0.1rem;
+            margin-bottom: 0.3rem;
+        }
+        h5
+        {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            font-weight: lighter;
+        }
+    
+        p
+        {
+            font-size: 1.6rem;
+            font-weight: lighter;
+        }
+    }
+    
+
+    .contactForm {
+        width: 556px;
+    }
+    .navbar
+    {
+        margin: 1.5rem 0rem;
+        font-size: 2.5rem;
+        padding: 0 0 0 2vw;
+    }
+    body
+    {
+        font-size: 3rem;
+    }
+    .servicios {
+        article
+        {
+            width: 40vw;
+            column-gap: 5vw;
+            h3
+            {
+                font-size: 6rem;
+                padding: .8rem;
+                height: 15rem;
+                width: 80%;
+            }
+            p
+            {
+                font-size: 4rem;
+            }
+        }    
+
+        div
+        {
+            height: 35%;
+            margin-bottom: 2%;
+        }
+    }
+
+
+}
+
+
+@media screen and (max-width: 1200px)
+{
+    .banner__info
+    {
+        width: 350px;
+        h1
+        {
+            font-size: 4.5rem;
+            margin-bottom: 1vh;
+        }
+        h2
+        {
+            font-size: 3.2rem;
+        }
+    } 
+
+    .titulo--1
+    {
+        width: 27rem;
+    }
+    .titulo--2
+    {
+        width: 31rem;
+    }
+    .titulo span
+    {
+        margin-bottom: 1.5rem;
+    }
+    .servicios
+    {
+        column-gap: 12vw;
+        article
+        {
+            width: 30vw;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .infoPersonal 
+    {
+        h3
+        {
+            color: $colorPpal;
+            font-size: 2.5rem;
+            padding-left: 1vw;
+            font-weight: bolder;
+        }
+        h4
+        {
+            font-size: 1.5rem;
+            letter-spacing: 0.1rem;
+            margin-bottom: 0.3rem;
+        }
+        h5
+        {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+            font-weight: lighter;
+        }
+        p
+        {
+            font-size: 1.1rem;
+            font-weight: lighter;
+        }
+    }
+    
+
+
+    .carousel
+    {
+        width: 80vw;
+        margin: 9vw 10vw;
+    }
+    .carousel-caption 
+    {
+        h5
+        {
+            font-size: 3rem;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.85);
+            color: $colorPpal;
+        }
+        p
+        {
+            font-size: 1.75rem;
+            background-color: rgba(255, 255, 255, 0.85);
+            color: $colorPpal;
+        }
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    .navigation__menu li
+    {
+        padding: 0.2rem 0.6rem;
+        font-size: 1.6rem;
+    }
+    .planes__titulo
+    {
+        font-size: 3rem;
+        padding-left: 3vw;
+    }
+    #planes td
+    {
+        font-size: 2rem;
+    }
+    td.titulo__horizontal
+    {
+        width: 20%;
+    }
+    .servicios
+    {
+        column-gap: 8vw;
+    }
+}
+
+/* ||||||||||||| MEDIDAS DE TABLET |||||||||||||| */
+@media screen and (max-width: 768px)
+{
+    .infoPersonal
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "titleExperiencia"
+            "experiencia"
+            "titleEducacion"
+            "educacion"
+            "titleConocimientos"
+            "redes";
+        justify-content: center;
+        padding: 2vh 4vw;
+        gap: 1vw;
+    }
+
+    .navigation__logo 
+    {
+        width: 90px;
+        margin: 1% 2vw;
+    } 
+    .navbar{
+        margin: 0;
+        .container-fluid
+        {
+            justify-content: center;
+        }
+    }
+    .navbar-nav
+    {
+        align-items: center;
+    }
+    .banner__info
+    {
+        width: 270px;
+        h1
+        {
+            font-size: 3.5rem;
+            margin-bottom: 0.5vh;
+        }
+        h2
+        {
+            font-size: 3.2rem;
+        }
+    } 
+
+    .titulo--1
+    {
+        width: 21rem;
+    }
+    .titulo--2
+    {
+        width: 24rem;
+    }
+    .titulo span
+    {
+        margin-bottom: 1rem;
+    }
+    .menu__usos
+    {
+        display: none;
+    }
+    .menu_planes
+    {
+        display: none;
+    }
+    .dropdown-menu
+    {
+        background-color: $colorPpal;
+        border: none;
+    }
+    .dropdown-item
+    {
+        color: #fff;
+        padding: 0.75rem 1rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    .tabla
+    {
+        padding: 3vw;
+    }
+    .table
+    {
+        min-width: 800px;
+        td
+        {
+            font-size: 2.2rem;
+        }
+        th
+        {
+            font-size: 2.1rem;
+        }
+    }
+
+    .home
+    {
+        display: none;
+    }
+    .servicios
+    {
+        column-gap: 5vw;
+        article
+        {
+            width: 40vw;
+        }
+    }
+}
+
+@media screen and (max-width: 660px)
+{
+    .servicios
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "servicio1"
+        "servicio2"
+        "servicio3"
+        "servicio4";
+        column-gap: none;
+        article
+        {
+            width: 100%;
+        }
+    }
+    .infoPersonal
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "titleExperiencia"
+            "experiencia"
+            "titleEducacion"
+            "educacion"
+            "titleConocimientos"
+            "redes";
+        justify-content: center;
+        padding: 2vh 4vw;
+        gap: 1vw;
+    }
+    .experienciaLaboral
+    {
+        height: auto;
+    }
+    .experienciaLaboral__item
+    {
+        padding: 5px;
+        width: 95%;
+    }
+    .educacion__item
+    {
+        width: 95%;
+        padding: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navigation__menu li {
+        padding: 0.2rem 0.6rem;
+        font-size: 1.6rem;
+    }
+
+    .banner {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 4vw 0;
+    }
+
+    .banner__info {
+        width: 100vw;
+        align-items: flex-start;
+        margin: 8vw 0;
+    }
+
+    .banner__img {
+        width: 80vw;
+        padding-right: 2vw;
+    }
+
+    .banner__info 
+    {
+        h1 {
+            font-size: 4.5rem;
+            margin-bottom: 1vh;
+        }
+        h2 {
+            font-size: 3.2rem;
+        }
+    }
+
+    .titulo--1 {
+        width: 27rem;
+    }
+
+    .titulo--2 {
+        width: 31rem;
+    }
+
+    .titulo span {
+        margin-bottom: 1.5rem;
+    }
+
+    .carousel {
+        width: 100vw;
+        margin: 9vw 0vw;
+    }
+
+    .carousel-caption {
+        h5 {
+            font-size: 2rem;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.85);
+            color: $colorPpal;
+        }
+
+        p {
+            font-size: 1.2rem;
+            background-color: rgba(255, 255, 255, 0.85);
+            color: $colorPpal;
+        }
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    .infoPersonal
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "titleExperiencia"
+            "experiencia"
+            "titleEducacion"
+            "educacion"
+            "titleConocimientos"
+            "redes";
+        justify-content: center;
+        padding: 2vh 4vw;
+        gap: 1vw;
+    }
+    .experienciaLaboral
+    {
+        height: auto;
+    }
+    .experienciaLaboral__item
+    {
+        padding: 5px;
+        width: 90%;
+    }
+    .contactForm
+    {
+        background-color: #fff;
+        width: 350px;
+        display: grid;
+        grid-template-areas:
+            "tagName"
+            "inputName"
+            "tagMail"
+            "inputMail"
+            "tagCountry"
+            "inputCountry"
+            "tagServices"
+            "inputServices"
+            "tagMessage"
+            "inputMessage"
+            "buttonSend"
+        ;
+        text-align: right;
+        gap: 1vw;
+
+        label
+        {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: left;
+        }
+    }
+    .contactForm 
+    .table
+    {
+        min-width: 500px;
+        td
+        {
+            font-size: 1.8rem;
+        }
+        th
+        {
+            font-size: 1.9rem;
+        }
+    }
+
+}
+@media screen and (max-width: 360px) {
+    .navigation__menu li {
+        padding: 0.2rem 0.6rem;
+        font-size: 1.6rem;
+    }
+
+    .banner__info {
+        width: 100vw;
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5vh;
+        }
+
+        h2 {
+            font-size: 3.2rem;
+        }
+    }
+
+    .titulo--1 {
+        width: 17rem;
+    }
+
+    .titulo--2 {
+        width: 20rem;
+    }
+
+    .titulo span {
+        margin-bottom: 1rem;
+    }
+
+    .carousel-caption {
+        h5 {
+            font-size: 1.7rem;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.85);
+            color: $colorPpal;
+        }
+
+        p {
+            font-size: 1rem;
+            background-color: rgba(255, 255, 255, 0.85);
+            color: $colorPpal;
+        }
+    }
+}
+
+
+/* |||||||||||||||||||         ANIMACIONES           |||||||||||||||||||| */
+
+@keyframes aparecer {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}

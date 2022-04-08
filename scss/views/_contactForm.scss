@@ -1,0 +1,114 @@
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4vw 4vw;
+    gap: 1vw;
+}
+
+.contactForm {
+    background-color: #fff;
+    width: 350px;
+    display: grid;
+    grid-template-areas:
+        "tagName inputName"
+        "tagMail inputMail"
+        "tagCountry inputCountry"
+        "tagServices inputServices"
+        "tagMessage inputMessage"
+        "NONE buttonSend";
+    text-align: right;
+    gap: 1vw;
+
+    input {
+        background-color: #DBC4DF;
+        border: none;
+        color: #fff;
+        padding: 0.3vw;
+    }
+
+
+    label {
+        font-size: 1.9vw;
+        color: $colorPpal;
+    }
+
+    select {
+        background-color: #DBC4DF;
+        border: none;
+        color: #fff;
+        padding: 0.3vw;
+    }
+
+    textarea {
+        background-color: #DBC4DF;
+        border: none;
+        color: #fff;
+        padding: 0.3vw;
+    }
+
+    fieldset {
+        border: none;
+        color: $colorPpal;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1vw;
+
+        span {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.5vw;
+        }
+    }
+
+}
+
+
+.contactAdress {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    color: $colorPpal;
+    background-color: #DBC4DF;
+    width: 380px;
+
+    h4 {
+        font-size: 1.7rem;
+        padding-bottom: 1rem;
+    }
+
+    ul {
+        margin-bottom: 1%;
+    }
+
+    span {
+        padding-bottom: 0.2rem;
+        color: #fff;
+    }
+
+    iframe {
+        width: 98%;
+        height: calc(98% / 4 * 3);
+    }
+
+    .rrss__icons {
+        margin: 1vw 0;
+        border-color: #fff;
+
+        img {
+            height: 27px;
+            border-color: #F4E2D2;
+        }
+    }
+}
+
+input.buttonSend
+{
+    grid-area: buttonSend;
+    background-color: $colorPpal;
+}

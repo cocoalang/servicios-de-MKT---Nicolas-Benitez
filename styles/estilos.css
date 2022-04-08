@@ -1,2 +1,720 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+
+html {
+  /* 62.5% of 16px base font size is 10px */
+  font-size: 62.5%; }
+
+*, ::after, ::before {
+  box-sizing: border-box; }
+
+.container-fluid {
+  padding: 0;
+  margin: 0; }
+
+.container {
+  padding: 0;
+  margin: 0; }
+
+.row {
+  margin: 0; }
+
 h1 {
-  background-color: aqua; }
+  font-size: 6rem;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 6rem;
+  font-weight: 400; }
+
+h3 {
+  font-size: 2.3rem;
+  font-weight: 600; }
+
+a {
+  text-decoration: none; }
+
+p {
+  font-size: 1.5rem; }
+
+mark {
+  background-color: #B88BAD;
+  color: #fff;
+  padding: 0 0.5rem 0 4vw;
+  margin: 0.5rem 0rem; }
+
+.bi-house-door-fill {
+  font-size: larger; }
+
+.navbar {
+  background-color: #B88BAD;
+  margin: 1.5rem 0rem;
+  font-size: 1.6rem;
+  padding: 0 0 0 1vw; }
+
+.navbar-nav {
+  align-items: center; }
+  .navbar-nav li {
+    margin-right: 1.5vw; }
+
+header {
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.nav-link {
+  color: #fff; }
+
+.navigation__logo {
+  align-items: center;
+  width: 100px; }
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 2vw; }
+
+.dropdown-menu {
+  background-color: #f4e2d2e8; }
+
+.dropdown-item {
+  color: #B88BAD;
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+  font-weight: bold; }
+
+.navbar-toggler {
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  margin: 1rem; }
+
+.nav-item.dropdown {
+  text-align: center; }
+
+.dropdown-menu.show {
+  text-align: center; }
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4vw 0 0 0;
+  padding-bottom: 4vw;
+  background: linear-gradient(to top, transparent, 10px, #eee3f0, 20px, transparent);
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: 1; }
+
+.banner__info {
+  width: 470px;
+  align-items: flex-start; }
+  .banner__info h1 {
+    display: flex;
+    color: #fff;
+    font-size: 6rem; }
+  .banner__info h2 {
+    color: #B88BAD;
+    padding-left: 4vw;
+    font-size: 5rem;
+    font-weight: lighter; }
+
+.banner__img {
+  width: 49vw;
+  padding-right: 2vw; }
+
+.titulo {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  row-gap: 1rem; }
+
+.carousel {
+  width: 80vw;
+  margin: 9vw 10vw; }
+
+.carousel-caption h5 {
+  font-size: 4rem;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #B88BAD; }
+
+.carousel-caption p {
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #B88BAD; }
+
+/* <<<<<<< FORMATOS MAIN SERVICIOS EN INDEX >>>>>>>>>>>>> */
+.servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "servicio1 servicio2" "servicio3 servicio4";
+  row-gap: 4vw;
+  column-gap: 20vh;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  align-items: center;
+  color: #B88BAD;
+  padding: 12vh 15vw 0 15vw;
+  text-align: center; }
+  .servicios article {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    justify-content: center; }
+    .servicios article img {
+      height: 80%;
+      justify-self: center; }
+    .servicios article h3 {
+      display: inline-block;
+      align-self: center;
+      padding: .8rem;
+      height: 7rem;
+      width: 80%; }
+    .servicios article p {
+      padding: .5em; }
+    .servicios article div {
+      height: 35%;
+      margin-bottom: 2%; }
+
+/* <<<<<<< FORMATOS PLANES  >>>>>>>>>>>>> */
+.tabla {
+  background-color: none;
+  background-image: url(../images/fondo_ciencia.png);
+  background-position: center;
+  display: block;
+  justify-content: center;
+  padding: 1vw 10vw;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: 1; }
+  .tabla th {
+    background-color: #B88BADd7;
+    color: #fff;
+    padding: 0 2rem;
+    padding: 1vw; }
+
+.table {
+  border-collapse: separate;
+  border-spacing: 10px;
+  min-width: 810px; }
+  .table thead {
+    font-size: 3.5rem; }
+  .table td {
+    background-color: #dbc4dfcc;
+    padding: 1vw;
+    color: #7a5972; }
+  .table ul {
+    list-style: none;
+    padding-left: 0; }
+
+.planes {
+  border-spacing: 8px;
+  font-size: 3rem; }
+
+table.planes {
+  padding: 0 3vw; }
+
+.planes__titulo {
+  text-align: left;
+  color: #B88BAD;
+  padding-left: 3vw; }
+
+.contenido_planes {
+  font-size: 3rem; }
+  .contenido_planes td {
+    width: 80vw; }
+
+.columna--0 {
+  width: 20vw; }
+
+.columna--1 {
+  width: 80vw; }
+
+.columna--2 {
+  width: 80vw; }
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 4vw 4vw;
+  gap: 1vw; }
+
+.contactForm {
+  background-color: #fff;
+  width: 350px;
+  display: grid;
+  grid-template-areas: "tagName inputName" "tagMail inputMail" "tagCountry inputCountry" "tagServices inputServices" "tagMessage inputMessage" "NONE buttonSend";
+  text-align: right;
+  gap: 1vw; }
+  .contactForm input {
+    background-color: #DBC4DF;
+    border: none;
+    color: #fff;
+    padding: 0.3vw; }
+  .contactForm label {
+    font-size: 1.9vw;
+    color: #B88BAD; }
+  .contactForm select {
+    background-color: #DBC4DF;
+    border: none;
+    color: #fff;
+    padding: 0.3vw; }
+  .contactForm textarea {
+    background-color: #DBC4DF;
+    border: none;
+    color: #fff;
+    padding: 0.3vw; }
+  .contactForm fieldset {
+    border: none;
+    color: #B88BAD;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1vw; }
+    .contactForm fieldset span {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5vw; }
+
+.contactAdress {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+  color: #B88BAD;
+  background-color: #DBC4DF;
+  width: 380px; }
+  .contactAdress h4 {
+    font-size: 1.7rem;
+    padding-bottom: 1rem; }
+  .contactAdress ul {
+    margin-bottom: 1%; }
+  .contactAdress span {
+    padding-bottom: 0.2rem;
+    color: #fff; }
+  .contactAdress iframe {
+    width: 98%;
+    height: calc(98% / 4 * 3); }
+  .contactAdress .rrss__icons {
+    margin: 1vw 0;
+    border-color: #fff; }
+    .contactAdress .rrss__icons img {
+      height: 27px;
+      border-color: #F4E2D2; }
+
+input.buttonSend {
+  grid-area: buttonSend;
+  background-color: #B88BAD; }
+
+.card {
+  box-shadow: 3px 3px 3px #B88BAD; }
+
+.infoPersonal {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: repeat(1fr 4);
+  grid-template-areas: "titleExperiencia titleEducacion" "experiencia educacion" "experiencia titleConocimientos" "experiencia redes";
+  justify-content: center;
+  padding: 2vh 4vw;
+  gap: 1vw; }
+  .infoPersonal h3 {
+    color: #B88BAD;
+    font-size: 3.5rem;
+    padding-left: 1vw;
+    font-weight: bolder; }
+  .infoPersonal h4 {
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.3rem; }
+  .infoPersonal h5 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+    font-weight: lighter; }
+  .infoPersonal p {
+    font-size: 1.4rem;
+    font-weight: lighter; }
+
+.experienciaLaboral {
+  grid-area: experiencia;
+  background-color: #B88BAD;
+  padding: 1vw;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  height: 443px;
+  color: #fff; }
+
+.experienciaLaboral__item {
+  padding: 5px;
+  width: 45%;
+  border-bottom: dashed 3px #DBC4DF; }
+
+.titleExperiencia {
+  grid-area: titleExperiencia;
+  align-items: baseline; }
+
+.titleEducacion {
+  grid-area: titleEducacion; }
+
+.titleConocimientos {
+  grid-area: titleConocimientos;
+  align-items: baseline; }
+
+.plataformasIconos {
+  grid-area: redes;
+  background-color: #B88BAD;
+  padding: 1vw; }
+  .plataformasIconos img {
+    width: 50px;
+    height: 50px;
+    padding: 0.3vw; }
+    .plataformasIconos img:hover {
+      transform: scale(1.1);
+      transition: transform 1s; }
+
+.animate__fadeInRight {
+  animation-duration: 1s; }
+
+.animate__fadeInLeft {
+  animation-duration: 1s; }
+
+.educacion {
+  grid-area: educacion;
+  background-color: #B88BAD;
+  padding: 1vw;
+  color: #fff;
+  animation-duration: 1s; }
+  .educacion h4 {
+    padding-bottom: 0.3rem; }
+
+.educacion__item {
+  border-bottom: dashed 3px #DBC4DF;
+  padding: 0.5rem 0; }
+
+footer {
+  background-color: #B88BAD;
+  color: #FFF5FB;
+  display: flex;
+  padding: 4vw 4vw 2vw 4vw;
+  gap: 2vw;
+  margin-top: 3%;
+  /*     background: linear-gradient(to bottom, transparent, 10%, $colorPpal); */ }
+  footer ul {
+    list-style: none;
+    font-size: 2rem;
+    width: 40vw;
+    min-width: 230px; }
+  footer li {
+    padding: 0.2rem;
+    list-style: none; }
+  footer a:link {
+    color: #F4E2D2; }
+  footer a:visited {
+    color: #fff; }
+  footer .rrss__icons {
+    min-width: 40;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2vw;
+    gap: 1vw; }
+    footer .rrss__icons img {
+      height: 40px; }
+
+@media screen and (min-width: 1440px) {
+  .infoPersonal h3 {
+    color: #B88BAD;
+    font-size: 3.5rem;
+    padding-left: 1vw;
+    font-weight: bolder; }
+  .infoPersonal h4 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.3rem; }
+  .infoPersonal h5 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    font-weight: lighter; }
+  .infoPersonal p {
+    font-size: 1.6rem;
+    font-weight: lighter; }
+  .contactForm {
+    width: 556px; }
+  .navbar {
+    margin: 1.5rem 0rem;
+    font-size: 2.5rem;
+    padding: 0 0 0 2vw; }
+  body {
+    font-size: 3rem; }
+  .servicios article {
+    width: 40vw;
+    column-gap: 5vw; }
+    .servicios article h3 {
+      font-size: 6rem;
+      padding: .8rem;
+      height: 15rem;
+      width: 80%; }
+    .servicios article p {
+      font-size: 4rem; }
+  .servicios div {
+    height: 35%;
+    margin-bottom: 2%; } }
+
+@media screen and (max-width: 1200px) {
+  .banner__info {
+    width: 350px; }
+    .banner__info h1 {
+      font-size: 4.5rem;
+      margin-bottom: 1vh; }
+    .banner__info h2 {
+      font-size: 3.2rem; }
+  .titulo--1 {
+    width: 27rem; }
+  .titulo--2 {
+    width: 31rem; }
+  .titulo span {
+    margin-bottom: 1.5rem; }
+  .servicios {
+    column-gap: 12vw; }
+    .servicios article {
+      width: 30vw; } }
+
+@media screen and (max-width: 1024px) {
+  .infoPersonal h3 {
+    color: #B88BAD;
+    font-size: 2.5rem;
+    padding-left: 1vw;
+    font-weight: bolder; }
+  .infoPersonal h4 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.3rem; }
+  .infoPersonal h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    font-weight: lighter; }
+  .infoPersonal p {
+    font-size: 1.1rem;
+    font-weight: lighter; }
+  .carousel {
+    width: 80vw;
+    margin: 9vw 10vw; }
+  .carousel-caption h5 {
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #B88BAD; }
+  .carousel-caption p {
+    font-size: 1.75rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #B88BAD; } }
+
+@media screen and (max-width: 900px) {
+  .navigation__menu li {
+    padding: 0.2rem 0.6rem;
+    font-size: 1.6rem; }
+  .planes__titulo {
+    font-size: 3rem;
+    padding-left: 3vw; }
+  #planes td {
+    font-size: 2rem; }
+  td.titulo__horizontal {
+    width: 20%; }
+  .servicios {
+    column-gap: 8vw; } }
+
+/* ||||||||||||| MEDIDAS DE TABLET |||||||||||||| */
+@media screen and (max-width: 768px) {
+  .infoPersonal {
+    grid-template-columns: 1fr;
+    grid-template-areas: "titleExperiencia" "experiencia" "titleEducacion" "educacion" "titleConocimientos" "redes";
+    justify-content: center;
+    padding: 2vh 4vw;
+    gap: 1vw; }
+  .navigation__logo {
+    width: 90px;
+    margin: 1% 2vw; }
+  .navbar {
+    margin: 0; }
+    .navbar .container-fluid {
+      justify-content: center; }
+  .navbar-nav {
+    align-items: center; }
+  .banner__info {
+    width: 270px; }
+    .banner__info h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5vh; }
+    .banner__info h2 {
+      font-size: 3.2rem; }
+  .titulo--1 {
+    width: 21rem; }
+  .titulo--2 {
+    width: 24rem; }
+  .titulo span {
+    margin-bottom: 1rem; }
+  .menu__usos {
+    display: none; }
+  .menu_planes {
+    display: none; }
+  .dropdown-menu {
+    background-color: #B88BAD;
+    border: none; }
+  .dropdown-item {
+    color: #fff;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    font-weight: bold; }
+  .tabla {
+    padding: 3vw; }
+  .table {
+    min-width: 800px; }
+    .table td {
+      font-size: 2.2rem; }
+    .table th {
+      font-size: 2.1rem; }
+  .home {
+    display: none; }
+  .servicios {
+    column-gap: 5vw; }
+    .servicios article {
+      width: 40vw; } }
+
+@media screen and (max-width: 660px) {
+  .servicios {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "servicio1" "servicio2" "servicio3" "servicio4";
+    column-gap: none; }
+    .servicios article {
+      width: 100%; }
+  .infoPersonal {
+    grid-template-columns: 1fr;
+    grid-template-areas: "titleExperiencia" "experiencia" "titleEducacion" "educacion" "titleConocimientos" "redes";
+    justify-content: center;
+    padding: 2vh 4vw;
+    gap: 1vw; }
+  .experienciaLaboral {
+    height: auto; }
+  .experienciaLaboral__item {
+    padding: 5px;
+    width: 95%; }
+  .educacion__item {
+    width: 95%;
+    padding: 1rem 0; } }
+
+@media screen and (max-width: 600px) {
+  .navigation__menu li {
+    padding: 0.2rem 0.6rem;
+    font-size: 1.6rem; }
+  .banner {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4vw 0; }
+  .banner__info {
+    width: 100vw;
+    align-items: flex-start;
+    margin: 8vw 0; }
+  .banner__img {
+    width: 80vw;
+    padding-right: 2vw; }
+  .banner__info h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1vh; }
+  .banner__info h2 {
+    font-size: 3.2rem; }
+  .titulo--1 {
+    width: 27rem; }
+  .titulo--2 {
+    width: 31rem; }
+  .titulo span {
+    margin-bottom: 1.5rem; }
+  .carousel {
+    width: 100vw;
+    margin: 9vw 0vw; }
+  .carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #B88BAD; }
+  .carousel-caption p {
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #B88BAD; } }
+
+@media screen and (max-width: 450px) {
+  .infoPersonal {
+    grid-template-columns: 1fr;
+    grid-template-areas: "titleExperiencia" "experiencia" "titleEducacion" "educacion" "titleConocimientos" "redes";
+    justify-content: center;
+    padding: 2vh 4vw;
+    gap: 1vw; }
+  .experienciaLaboral {
+    height: auto; }
+  .experienciaLaboral__item {
+    padding: 5px;
+    width: 90%; }
+  .contactForm {
+    background-color: #fff;
+    width: 350px;
+    display: grid;
+    grid-template-areas: "tagName" "inputName" "tagMail" "inputMail" "tagCountry" "inputCountry" "tagServices" "inputServices" "tagMessage" "inputMessage" "buttonSend";
+    text-align: right;
+    gap: 1vw; }
+    .contactForm label {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: left; }
+  .contactForm
+.table {
+    min-width: 500px; }
+    .contactForm
+.table td {
+      font-size: 1.8rem; }
+    .contactForm
+.table th {
+      font-size: 1.9rem; } }
+
+@media screen and (max-width: 360px) {
+  .navigation__menu li {
+    padding: 0.2rem 0.6rem;
+    font-size: 1.6rem; }
+  .banner__info {
+    width: 100vw; }
+    .banner__info h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5vh; }
+    .banner__info h2 {
+      font-size: 3.2rem; }
+  .titulo--1 {
+    width: 17rem; }
+  .titulo--2 {
+    width: 20rem; }
+  .titulo span {
+    margin-bottom: 1rem; }
+  .carousel-caption h5 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #B88BAD; }
+  .carousel-caption p {
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #B88BAD; } }
+
+/* |||||||||||||||||||         ANIMACIONES           |||||||||||||||||||| */
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

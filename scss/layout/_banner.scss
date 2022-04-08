@@ -1,0 +1,44 @@
+.banner
+{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4vw 0 0 0;
+    padding-bottom: 4vw;
+    background: linear-gradient(to top, transparent, 10px, #eee3f0, 20px, transparent);
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+.banner__info
+{
+    width: 470px;
+    align-items:flex-start;
+    h1
+    {
+        display: flex;
+        color: #fff;
+        font-size: 6rem;
+    }
+    h2
+    {
+        color: $colorPpal;
+        padding-left: 4vw;
+        font-size: 5rem;
+        font-weight: lighter;
+    }
+} 
+.banner__img
+{
+    width: 49vw;
+    padding-right: 2vw;
+} 
+.titulo
+{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}

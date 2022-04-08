@@ -1,0 +1,54 @@
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2vw;
+    justify-content: space-evenly;
+    gap: 3vw;
+
+    h4 {
+        font-size: 1.7rem;
+        padding-bottom: 1rem;
+    }
+
+    ul {
+        margin-bottom: 1%;
+    }
+
+    span {
+        padding-bottom: 0.2rem;
+        color: #fff;
+    }
+
+    iframe {
+        width: 98%;
+        height: calc(98% / 4 * 3);
+    }
+
+    .rrss__icons {
+        margin-bottom: 1vw;
+        border-color: #fff;
+        img {
+            width: 35px;
+            height: 35px;
+            border-color: #F4E2D2;
+        }
+    }
+
+    img {
+        width: 200px;
+        height: 100px;
+        background-color: #F4E2D2;
+    }
+}
+.itemProject
+{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    color: $colorPpal;
+    background-color: #DBC4DF;
+    width: 200px;
+    gap: 2vw;
+}

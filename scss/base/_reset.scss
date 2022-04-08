@@ -1,0 +1,54 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: $fontStyles;
+}
+html 
+{
+    /* 62.5% of 16px base font size is 10px */
+    font-size: 62.5%;
+}
+*, ::after, ::before 
+{
+    box-sizing: border-box;
+}
+.container-fluid
+{
+    padding: 0;
+    margin: 0;
+}
+.container
+{
+    padding: 0;
+    margin: 0;
+}
+.row
+{
+    margin: 0;
+}
+h1
+{
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h2
+{
+    font-size: 6rem;
+    font-weight:400;
+}
+h3
+{
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+a
+{
+    text-decoration: none;
+}
+p
+{
+    font-size: 1.5rem;
+}

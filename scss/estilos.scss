@@ -1,4 +1,10 @@
-h1
-{
-    background-color: aqua;
-}
+@import "variables";
+@import "base/reset";
+@import "layout/header";
+@import "layout/banner";
+@import "views/index";
+@import "views/contactForm";
+@import "views/blog";
+@import "views/conoceme";
+@import "layout/footer";
+@import "mquery"

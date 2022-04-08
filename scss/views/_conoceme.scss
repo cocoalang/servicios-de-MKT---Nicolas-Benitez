@@ -1,0 +1,112 @@
+.infoPersonal {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(1fr 4);
+    grid-template-areas:
+        "titleExperiencia titleEducacion"
+        "experiencia educacion"
+        "experiencia titleConocimientos"
+        "experiencia redes";
+    justify-content: center;
+    padding: 2vh 4vw;
+    gap: 1vw;
+
+    h3 {
+        color: $colorPpal;
+        font-size: 3.5rem;
+        padding-left: 1vw;
+        font-weight: bolder;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 0.3rem;
+    }
+
+    h5 {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+        font-weight: lighter;
+    }
+
+    p {
+        font-size: 1.4rem;
+        font-weight: lighter;
+    }
+}
+
+.experienciaLaboral {
+    grid-area: experiencia;
+    background-color: $colorPpal;
+    padding: 1vw;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    height: 443px;
+    color: #fff;
+}
+
+.experienciaLaboral__item {
+    padding: 5px;
+    width: 45%;
+    border-bottom: dashed 3px #DBC4DF;
+}
+
+.titleExperiencia {
+    grid-area: titleExperiencia;
+    align-items: baseline;
+}
+
+.titleEducacion {
+    grid-area: titleEducacion;
+}
+
+.titleConocimientos {
+    grid-area: titleConocimientos;
+    align-items: baseline;
+}
+
+.plataformasIconos {
+    grid-area: redes;
+
+    background-color: $colorPpal;
+    padding: 1vw;
+
+    img {
+        width: 50px;
+        height: 50px;
+        padding: 0.3vw;
+
+        &:hover {
+            transform:
+                scale(1.1);
+            transition: transform 1s;
+        }
+    }
+}
+
+.animate__fadeInRight {
+    animation-duration: 1s;
+}
+
+.animate__fadeInLeft {
+    animation-duration: 1s;
+}
+
+.educacion {
+    grid-area: educacion;
+    background-color: $colorPpal;
+    padding: 1vw;
+    color: #fff;
+    animation-duration: 1s;
+
+    h4 {
+        padding-bottom: 0.3rem;
+    }
+}
+
+.educacion__item {
+    border-bottom: dashed 3px #DBC4DF;
+    padding: 0.5rem 0;
+}

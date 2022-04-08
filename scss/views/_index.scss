@@ -1,0 +1,151 @@
+
+.carousel
+{
+    width: 80vw;
+    margin: 9vw 10vw;
+}
+.carousel-caption 
+{
+    h5
+    {
+        font-size: 4rem;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.85);
+        color: $colorPpal;
+    }
+    p
+    {
+        font-size: 3rem;
+        background-color: rgba(255, 255, 255, 0.85);
+        color: $colorPpal;
+    }
+}
+
+
+/* <<<<<<< FORMATOS MAIN SERVICIOS EN INDEX >>>>>>>>>>>>> */
+.servicios
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "servicio1 servicio2"
+    "servicio3 servicio4";
+    row-gap: 4vw;
+    column-gap: 20vh;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-items: center;
+    color: $colorPpal;
+    padding: 12vh 15vw 0 15vw;
+    text-align: center;
+    article
+    {
+        display: flex;
+        flex-direction: column;
+        align-self: start;
+        justify-content: center;
+        img
+        {
+            height: 80%;
+            justify-self: center;
+        }
+        h3
+        {
+            display: inline-block;
+            align-self: center;
+            padding: .8rem;
+            height: 7rem;
+            width: 80%;
+        }
+        p
+        {
+            padding: .5em;
+        }
+        div
+        {
+            height: 35%;
+            margin-bottom: 2%;
+        }
+    }
+}
+
+/* <<<<<<< FORMATOS PLANES  >>>>>>>>>>>>> */
+
+.tabla
+{
+    background-color: none;
+    background-image: url(../images/fondo_ciencia.png);
+    background-position: center;
+    display: block;
+    justify-content: center;
+    padding: 1vw 10vw;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    th
+    {
+        background-color: #B88BADd7;
+        color: #fff;
+        padding: 0 2rem;
+        padding: 1vw;
+    }
+}
+.table
+{
+    border-collapse: separate;
+    border-spacing: 10px;
+    min-width: 810px;
+    thead
+    {
+        font-size: 3.5rem;
+    }
+    td
+    {
+        background-color: #dbc4dfcc;
+        padding: 1vw;
+        color: #7a5972;
+    }
+    ul
+    {
+        list-style: none;
+        padding-left: 0;
+    }
+}
+.planes
+{
+    border-spacing: 8px;
+    font-size: 3rem;
+}
+table.planes
+{
+    padding: 0 3vw;
+}
+
+.planes__titulo
+{
+    text-align: left;
+    color: $colorPpal;
+    padding-left: 3vw;
+}
+
+.contenido_planes
+{
+    font-size: 3rem;
+    td
+    {
+        width: 80vw;
+    }
+}
+.columna--0
+{
+    width: 20vw;
+}
+.columna--1
+{
+    width: 80vw;
+}
+.columna--2
+{
+    width: 80vw;
+}

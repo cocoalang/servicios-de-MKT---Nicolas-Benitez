@@ -1,0 +1,43 @@
+footer {
+    background-color: $colorPpal;
+    color: #FFF5FB;
+    display: flex;
+    padding: 4vw 4vw 2vw 4vw;
+    gap: 2vw;
+    margin-top: 3%;
+/*     background: linear-gradient(to bottom, transparent, 10%, $colorPpal); */
+
+    ul {
+        list-style: none;
+        font-size: 2rem;
+        width: 40vw;
+        min-width: 230px;
+    }
+
+    li {
+        padding: 0.2rem;
+        list-style: none;
+    }
+
+    a {
+        &:link {
+            color: #F4E2D2;
+        }
+
+        &:visited {
+            color: #fff;
+        }
+    }
+
+    .rrss__icons {
+        min-width: 40;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 2vw;
+        gap: 1vw;
+
+        img {
+            height: 40px;
+        }
+    }
+}
