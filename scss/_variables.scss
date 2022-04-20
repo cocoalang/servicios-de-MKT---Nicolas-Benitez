@@ -1,6 +1,23 @@
+
+$fontStyles: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 $colorPpal: #B88BAD;
 $colorAlt: #DBC4DF;
 $color3: #FFF5FB;
 $colorOpuesto: #F4E2D2;
 $colorBlanco: #fff;
-$fontStyles: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+$bordo: #B88BAD;
+$rosado: #DBC4DF;
+$crema: #FFF5FB;
+$beige: #F4E2D2;
+$blanco: #fff;
+
+$colores: (
+    principal: $bordo,
+    secundario: $rosado,
+    claro: $crema,
+    complementario: $beige,
+    fondo: $blanco,
+    letraClara: $blanco,
+    letraOscura: $bordo
+)

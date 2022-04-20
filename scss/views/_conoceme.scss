@@ -36,15 +36,19 @@
     }
 }
 
-.experienciaLaboral {
-    grid-area: experiencia;
+.bloquesConoceme {
     background-color: $colorPpal;
     padding: 1vw;
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
-    height: 443px;
     color: #fff;
+}
+
+.experienciaLaboral {
+    @extend .bloquesConoceme;
+    grid-area: experiencia;
+    height: 443px;
 }
 
 .experienciaLaboral__item {
@@ -74,8 +78,8 @@
     padding: 1vw;
 
     img {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
         padding: 0.3vw;
 
         &:hover {
@@ -95,10 +99,9 @@
 }
 
 .educacion {
+    @extend .bloquesConoceme;
+    flex-wrap: nowrap;
     grid-area: educacion;
-    background-color: $colorPpal;
-    padding: 1vw;
-    color: #fff;
     animation-duration: 1s;
 
     h4 {
